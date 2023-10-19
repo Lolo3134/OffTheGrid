@@ -1,0 +1,7 @@
+@import "variables";
+
+@mixin Text ($line: normal ) {
+  font-size: 0.875rem;
+  line-height: $line;
+  font-weight: 400;
+}
