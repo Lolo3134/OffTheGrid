@@ -1,0 +1,437 @@
+@import "mixin";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 39px;
+  margin-bottom: 104px;
+
+  .contents {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 93px;
+
+    .title {
+      @include Title(11.5rem);
+    }
+
+    .subtitle {
+      @include Text(62px, 3rem);
+      max-width: 280px;
+    }
+  }
+
+  .services {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px 10px;
+    grid-template-areas:
+    "dev dev design design design design"
+    "motion motion target target foto pixelArt";
+
+    .services_item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      border-radius: 30px;
+      height: 244px;
+      padding: 25px;
+
+      .services_item__wrapper {
+        .h2 {
+          @include Title(1.5rem);
+          margin-bottom: 10px;
+        }
+
+        .h2Subtitle {
+          @include Text(24px, 0.875rem);
+          max-width: 120px;
+        }
+
+      }
+
+      .page {
+        @include Text(normal, 0.875rem)
+      }
+    }
+
+
+    .services_dev {
+      grid-area: dev;
+      background-color: $brand-primary-strong;
+      background-image: url("../assets/image/services_dev.webp");
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-position: right;
+
+      .services_item__wrapper {
+        .h2 {
+          @include Title(2rem);
+        }
+      }
+    }
+
+    .services_design {
+      grid-area: design;
+      background-color: $brand-secondary-subtle;
+      background-image: url("../assets/image/services_design.webp");
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-position: 227px;
+
+      .services_item__wrapper {
+        .h2 {
+          @include Title(2rem);
+        }
+      }
+    }
+
+    .services_motion {
+      grid-area: motion;
+      background-color: #FFFFFF;
+      background-image: url("../assets/image/services_motion.webp");
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-position: right;
+      color: $bg-primary;
+
+      .services_item__wrapper {
+        .h2 {
+          color: $bg-primary;
+        }
+
+        .h2Subtitle {
+          color: rgba(3, 3, 3, 0.4);
+        }
+      }
+    }
+
+    .services_target {
+      grid-area: target;
+      background-color: $brand-primary-badge;
+      background-image: url("../assets/image/services_target.webp");
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-position: right;
+    }
+
+    .services_foto {
+      grid-area: foto;
+      background-color: $brand-primary-strong;
+    }
+
+    .services_pixelArt {
+      grid-area: pixelArt;
+      border: 1px solid #FFF;
+      height: 242px;
+    }
+  }
+}
+
+.taglines {
+  display: flex;
+  flex-direction: column;
+  gap: 88px;
+  margin-bottom: 99px;
+
+  .taglines_title {
+    @include Text(normal, 5.625rem, 500);
+    text-align: justify;
+
+    .emphasis {
+      display: inline-block;
+      text-align: center;
+      border-radius: 255px;
+      background: #F23785;
+      width: 521px;
+      height: 92px;
+      line-height: 76px;
+    }
+    .link__wrapper {
+      display: inline-block;
+      margin: 0 69px;
+
+      .line {
+        display: inline-block;
+        width: 78px;
+        border: 1px solid $brand-primary-strong;
+        vertical-align: middle;
+      }
+
+      .link {
+        @include Text(normal, 1.125rem, 400);
+        color: $brand_primary-strong;
+        text-transform: uppercase;
+        vertical-align: middle;
+        text-decoration: none;
+        margin-left: 51.5px;
+
+        span {
+          @include Text(normal, 1.125rem, 700)
+        }
+      }
+    }
+  }
+
+  .tagline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 77px;
+
+    .tagline_description {
+      display: flex;
+      flex-direction: column;
+      border-radius: 35px;
+      border: 1px solid #FFF;
+      padding: 71px 71px 53px 56px;
+
+      .icons {
+        display: flex;
+
+        img:not(:first-child) {
+          margin-left: -14px;
+        }
+      }
+
+      .title {
+        display: flex;
+        align-items: baseline;
+        gap: 20px;
+        margin: 52px 0 39px 6px;
+        @include Text(30px, 3rem, 400)
+      }
+
+      .description {
+        @include Text(30px, 1.125rem, 400);
+        max-width: 267px;
+      }
+    }
+
+    .tagline_items {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      width: 100%;
+
+      .tagline_item {
+        @include Text(normal, 3rem, 500);
+        border-radius: 255px;
+        text-align: center;
+        width: max-content;
+        padding: 10px 25px;
+        color: $text_icons-Secondary;
+        background-color: #FFFFFF;
+        transform: rotate(-6.174deg);
+      }
+
+      .tagline_item__border {
+        border: 1px solid white;
+        background: none;
+        color: $text_icons-Primary;
+        transform: rotate(5.452deg);
+      }
+
+      :nth-of-type(1):not(:last-of-type) {
+        margin: 0 250px 0 0;
+
+      }
+
+      :nth-of-type(2) {
+        margin: -55px 0 0 0;
+
+      }
+
+      :nth-of-type(3) {
+        margin: -10px 311px 0 0;
+      }
+
+      :nth-of-type(4) {
+        margin: 10px 31px 0 0;
+      }
+
+      :nth-of-type(5) {
+        margin: 0 432px 0 0;
+      }
+
+      .tagline_link {
+        z-index: 2;
+
+        img {
+          margin: -95px 181px 0 0;
+        }
+      }
+
+
+
+
+    }
+  }
+}
+
+.advantages {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 32px 0px;
+  margin-bottom: 73px;
+  grid-template-areas:
+    "Creative Versatility "
+    "Partner Quality";
+
+  .advantages_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $bg-secondary;
+    border-radius: 255px;
+    padding: 0 52px;
+    height: 270px;
+
+    .title {
+      @include Title(3rem);
+      border-radius: 255px;
+      width: max-content;
+      color: $text_icons-Secondary;
+      background-color: #FFFFFF;
+      padding: 17px 19px;
+
+    }
+
+    .title__border {
+      color: $text_icons-Primary;
+      border: 1px solid $text_icons-Primary;
+      padding: 16px 18px;
+      background-color: transparent;
+    }
+
+    .description {
+      width: 100%;
+      @include Text(30px, 1.125rem, 400);
+    }
+
+  }
+
+  .creative {
+    grid-area: Creative;
+
+    .title {
+      margin-top: -8px;
+      transform: rotate(-6.174deg);
+    }
+
+    .description {
+      margin-top: calc(133px - 78px + 8px);
+    }
+  }
+
+  .versatility {
+    grid-area: Versatility;
+
+    .title {
+      margin-top: 4px;
+      transform: rotate(5.452deg);
+    }
+
+    .description {
+      margin-top: calc(133px - 78px - 4px);
+    }
+  }
+
+  .partner {
+    grid-area: Partner;
+
+    .title {
+      margin-top: -9px;
+      transform: rotate(-6.174deg);
+    }
+
+    .description {
+      margin-top: calc(133px - 78px + 9px);
+    }
+  }
+
+  .quality {
+    grid-area: Quality;
+
+    .title {
+      margin-top: 2px;
+      transform: rotate(5.452deg);
+    }
+
+    .description {
+      margin-top: calc(133px - 78px - 2px);
+    }
+  }
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 53px 132px 0;
+  align-items: flex-end;
+
+  .conteiner {
+    width: 768px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "here subtitle"
+    "now now";
+    align-items: center;
+
+    .here {
+      grid-area: here;
+      @include Title(11.5rem);
+    }
+
+    .now {
+      grid-area: now;
+      @include Title(11.5rem);
+    }
+
+    .subtitle_wrapper {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-right: -42px;
+      .subtitle {
+        grid-area: subtitle;
+        @include Text(30px, 1.125rem, 400);
+        max-width: 311px;
+      }
+    }
+  }
+
+  .link {
+    width: 371px;
+    height: 371px;
+    background: $brand-primary-strong;
+    border-radius: 371px;
+    color: $text_icons-Secondary;
+    text-align: center;
+    text-decoration: none;
+
+    img {
+      width: 88px;
+      height: 88px;
+      padding: 89px 32px 35px;
+    }
+
+    span {
+      color: $text_icons-Secondary;
+      @include Text(100%, 3rem, 500);
+      text-transform: uppercase;
+      border-bottom: 3px solid $text_icons-Secondary;
+    }
+  }
+}
+
+
+
+
+

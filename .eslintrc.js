@@ -3,10 +3,7 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: [
-    'plugin:react/recommended',
-    'airbnb',
-  ],
+  extends: ['plugin:react/recommended', 'airbnb'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
@@ -15,10 +12,7 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: [
-    'react',
-    '@typescript-eslint',
-  ],
+  plugins: ['react', '@typescript-eslint'],
   rules: {
     // Точка с запятой в конце
     semi: ['warn', 'always'],
@@ -32,16 +26,20 @@ module.exports = {
     // Обязательное использование const если нет переопределения переменной
     'prefer-const': 'error',
     // Максимальная длинна строки
-    'max-len': ['error', { code: 100 }],
+    'max-len': ['error', { code: 120 }],
     // Обязательные переносы строк внутри круглых скобок параметров
     // 'function-paren-newline': ['error', 'multiline-arguments'],
     // Обязательные переносы строк внутри круглых скобок атрибутов при вызове функции
     // 'function-call-argument-newline': ['error', 'never'],
-    '@typescript-eslint/indent': ['error', 2, {
-      MemberExpression: 1,
-      SwitchCase: 1,
-      ignoredNodes: ['TSTypeParameterInstantiation'],
-    }],
+    '@typescript-eslint/indent': [
+      'error',
+      2,
+      {
+        MemberExpression: 1,
+        SwitchCase: 1,
+        ignoredNodes: ['TSTypeParameterInstantiation'],
+      },
+    ],
     // Это правило требует, чтобы операторы return всегда или никогда не указывали значения
     'consistent-return': 'off',
     // Запретить операторы присваивания в операторах return
@@ -63,14 +61,14 @@ module.exports = {
     /**
      *  Убираем проверку затенения (объявление одинаковых переменных в разных областях)
      *  Криво работает с TS, ругается на enum'ы
-    */
+     */
     'no-shadow': 'off',
     /**
      * Запятая после последнего свойства/элемента в объектах/массивах.
      * always-multiline - требует запятые в конце, когда последний элемент или свойство
      * находится на другой строке, с закрывающими "]" или "}"
      * Правила тут https://eslint.org/docs/latest/rules/comma-dangle#rule-details
-    */
+     */
     'comma-dangle': ['error', 'always-multiline'],
     // Отключаем обязательное указание расширения импортируемого файла
     'import/extensions': 'off',
@@ -91,10 +89,13 @@ module.exports = {
      * newlines-between - Пустая строка между группами импортов
      * Правила тут https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/order.md
      */
-    'import/order': ['error', {
-      groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object', 'type'],
-      'newlines-between': 'always-and-inside-groups',
-    }],
+    'import/order': [
+      'error',
+      {
+        groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object', 'type'],
+        'newlines-between': 'always-and-inside-groups',
+      },
+    ],
     // Количество пробелов слева строки (отступов) для компонент (jsx)
     'react/jsx-indent': ['warn', 2],
     // Запрещаем, использование устаревших методов реакта
@@ -104,10 +105,13 @@ module.exports = {
     'react/prop-types': 'off',
     // Количество передаваемых пропсов на 1 строке (single) и при множестве строк (multi)
     'react/jsx-max-props-per-line': [1, { maximum: { single: 3, multi: 1 } }],
-    'jsx-a11y/anchor-is-valid': ['error', {
-      components: ['Link'],
-      specialLink: ['to'],
-    }],
+    'jsx-a11y/anchor-is-valid': [
+      'error',
+      {
+        components: ['Link'],
+        specialLink: ['to'],
+      },
+    ],
     'jsx-a11y/alt-text': [0],
     /**
      * Сортировка передаваемых пропсов в компоненту
@@ -121,15 +125,18 @@ module.exports = {
      * может принимать массив с пропсами к которым применимо данное правило
      * locale - языковой стандарт (лучше оставлять в авто)
      */
-    'react/jsx-sort-props': ['warn', {
-      callbacksLast: true,
-      shorthandFirst: true,
-      multiline: 'last',
-      ignoreCase: true,
-      noSortAlphabetically: false,
-      reservedFirst: true,
-      locale: 'auto',
-    }],
+    'react/jsx-sort-props': [
+      'warn',
+      {
+        callbacksLast: true,
+        shorthandFirst: true,
+        multiline: 'last',
+        ignoreCase: true,
+        noSortAlphabetically: false,
+        reservedFirst: true,
+        locale: 'auto',
+      },
+    ],
     // Форматы импортируемых файлов
     'react/jsx-filename-extension': ['error', { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
     // Отключение обязательного использования дефолтных пропсов
@@ -142,14 +149,13 @@ module.exports = {
     'react/function-component-definition': 'off',
     // Выводить предупреждение на использование индекса массива в key
     'react/no-array-index-key': 'off',
-
   },
   /**
    * Объявление глобальных переменных для линта,
    * true - разрешает перезаписывать глобальную переменную (writable),
    * false - делает её только для чтения (readonly)
    * Особенно применимо для глобальных переменных из DifinePlugin вебпака
-  */
+   */
   globals: {
     // Добавляем реакт для решения проблемы в файлах глобальной декларации типов (global.d.ts)
     React: false,

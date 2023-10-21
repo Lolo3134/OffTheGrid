@@ -13,11 +13,11 @@
     align-items: center;
     gap: 10px;
     color: $text_icons-Primary;
-    @include Text();
+    @include Text(normal, 0.875rem);
 
     a {
       color: $text_icons-Primary;
-      @include Text();
+      @include Text(normal, 0.875rem);
       text-decoration: none;
     }
 
