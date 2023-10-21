@@ -1,0 +1,71 @@
+@import "src/styles/mixin";
+@import "src/styles/variables";
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 23px 0 53px;
+
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    color: $text_icons-Primary;
+    @include Text(normal, 0.875rem);
+
+    a {
+      color: $text_icons-Primary;
+      @include Text(normal, 0.875rem);
+      text-decoration: none;
+    }
+
+    .portfolio {
+      display: flex;
+      align-items: center;
+      gap: 35px;
+      padding: 5px 5px 5px 20px;
+      border-radius: 30px;
+      border: 1px solid #FFF;
+
+      .portfolio_quantity {
+        color: $text_icons-Secondary;
+        background-color: $brand-primary-strong;
+        border-radius: 30px;
+        padding: 6px 16px;
+      }
+    }
+
+    .pages {
+      display: flex;
+      gap: 36px;
+      align-items: center;
+      padding: 11px 28px;
+      border-radius: 30px;
+      border: 1px solid #FFF;
+    }
+
+    .request {
+      display: flex;
+      align-items: center;
+      gap: 19px;
+      border-radius: 30px;
+      background: #FFF;
+      color: $text-icons-Secondary;
+      padding: 5px 5px 5px 28px;
+
+      button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+      }
+      :last-of-type {
+        border-radius: 30px;
+        background: #97D317;
+        padding: 6px 12px;
+      }
+    }
+  }
+}

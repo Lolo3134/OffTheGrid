@@ -1,0 +1,42 @@
+@import "variables";
+
+body {
+  background: $bg-primary;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 500;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  font-size: 1.125rem;
+  color: $text_icons-Primary;
+}
+
+.app {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/Gilroy-Regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../assets/fonts/Gilroy-Medium.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../assets/fonts/Gilroy-Bold.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
