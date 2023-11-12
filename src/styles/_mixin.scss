@@ -1,16 +1,16 @@
 @import "variables";
 
-@mixin Text ($line: normal, $size, $weaght: 400 ) {
+@mixin Text ($line: normal, $size,) {
   font-size: $size;
   line-height: $line;
-  font-weight: $weaght;
+  font-weight: 400;
 }
 
 @mixin Title ($size) {
   color: $text_icons-Primary;
   font-size: $size;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   line-height: normal;
-  margin: 0;
+  margin-top: 0px;
 }
