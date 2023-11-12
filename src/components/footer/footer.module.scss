@@ -1,0 +1,218 @@
+@import "src/styles/mixin";
+@import "src/styles/variables";
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 38px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: $brand-primary-badge;
+  padding: 70px 0 36px;
+  border-radius: 50px;
+  overflow: hidden;
+  @media screen and (max-width: 767px) {
+    padding: 42px 0 25px;
+  }
+
+  .contacts__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 104px;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column-reverse;
+      gap: 20px;
+      margin-bottom: 60px;
+    }
+
+    .badge {
+      @include Text(24px, 1rem);
+      max-width: 425px;
+      @media screen and (max-width: 767px) {
+        @include Text(20px, 1rem);
+        max-width: 295px;
+      }
+    }
+
+    .title {
+      @include Text(96px, 8rem);
+      @media screen and (max-width: 767px) {
+        @include Text(36px, 2rem);
+      }
+    }
+  }
+
+  .link {
+    @include Text(normal, 2rem);
+    border-radius: 255px;
+    background: $brand-primary-strong;
+    margin-bottom: 138px;
+    color: $text-icons-Primary;
+    text-decoration: none;
+    display: flex;
+    height: 82px;
+    width: 228px;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 767px) {
+      @include Text(normal, 1.25rem);
+      margin-bottom: 143px;
+    }
+  }
+
+  .marquee {
+    @include Text(96px, 6rem);
+    overflow: hidden;
+    @media screen and (max-width: 767px) {
+      @include Text(36px, 2rem);
+    }
+
+    span {
+      margin: 0 30px;
+      @media screen and (max-width: 767px) {
+        margin: 0 15px
+      }
+    }
+
+    .marquee__pink {
+      color: $brand-primary-subtle;
+    }
+
+    .marquee__green {
+      color: $brand-primary-strong;
+    }
+
+    .marquee__orange {
+      color: $brand-secondary-strong;
+    }
+
+    .marquee__purple {
+      color: $brand-secondary-subtle;
+    }
+  }
+}
+
+.dev {
+  background: $brand-primary-strong;
+
+  .contacts__wrapper {
+    .badge {
+      max-width: 489px;
+      span {
+        color: #CBFF5E;
+      }
+    }
+  }
+
+  .link {
+    background: $brand-primary-subtle;
+  }
+
+  .marquee {
+    color: #CBFF5E;
+    .marquee__green {
+      color: #CBFF5E;
+    }
+  }
+}
+
+.bottom {
+  display: flex;
+  gap: 10px;
+  height: 293px;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    gap: 20px;
+    height: 606px;
+  }
+
+  .left {
+    width: 28%;
+    background: $bg-secondary-subtle;
+    border-radius: 30px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media screen and (max-width: 767px) {
+      width: calc(100% - 50px);
+      height: calc(100% - 50px);
+    }
+
+    img {
+      max-width: 191px;
+    }
+
+   .nav {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+        a {
+          color: $text_icons-Primary;
+          text-decoration: none;
+          @include Text(normal, 1rem)
+    }
+  }
+}
+
+  .right {
+    width: 72%;
+    background: $bg-secondary-subtle;
+    border-radius: 30px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media screen and (max-width: 767px) {
+      width: calc(100% - 50px);
+      height: calc(100% - 50px);
+      justify-content: flex-start;
+    }
+
+    h3 {
+      @include Text(120%, 2rem);
+      @media screen and (max-width: 767px) {
+        @include Text(120%, 1.5rem);
+        margin-bottom: 20px;
+      }
+    }
+
+    .social {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      @media screen and (max-width: 767px) {
+        flex-direction: column;
+        align-items: flex-start;
+        height: 100%;
+      }
+
+      .links {
+        display: flex;
+        gap: 10px;
+
+        @media screen and (max-width: 767px) {
+          img {
+            width: 36px;
+            height: 36px;
+          }
+        }
+      }
+
+      p {
+        @include Text(24px, 1rem);
+      }
+    }
+  }
+}
