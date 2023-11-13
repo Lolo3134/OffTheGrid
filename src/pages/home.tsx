@@ -7,7 +7,7 @@ import { useInView } from 'react-intersection-observer';
 import s from '../styles/home.module.scss';
 
 import {
-  Arrow, At, Fire, Folder, Hashtag, Heart, Share, Sort,
+  Arrow, At, Fire, Folder, Hashtag, Heart, Pixel, Share, Sort, Triangle,
 } from '../styles/icons';
 
 import team from '../assets/image/teams.webp';
@@ -71,17 +71,7 @@ export const Home = () => {
             <h3 className={s.h3}>Web development</h3>
             <div className={s.services_item__wrapper}>
               <div className={s.service_description}>
-                <div className={s.h3Subtitle}>
-                  Ux/ui design 3D
-                  <br />
-                  Motion design
-                  <br />
-                  Advertising target
-                  <br />
-                  Video, foto
-                  <br />
-                  2D Pixel Art
-                </div>
+                <div className={s.h3Subtitle} />
                 <div className={s.page}>/01</div>
               </div>
               <div className={s.dev_bg__wrapper}>
@@ -110,17 +100,7 @@ export const Home = () => {
             <h3 className={s.h3}>UX/UI design</h3>
             <div className={s.services_item__wrapper}>
               <div className={s.service_description}>
-                <div className={s.h3Subtitle}>
-                  Ux/ui design 3D
-                  <br />
-                  Motion design
-                  <br />
-                  Advertising target
-                  <br />
-                  Video, foto
-                  <br />
-                  2D Pixel Art
-                </div>
+                <div className={s.h3Subtitle} />
                 <div className={s.page}>/02</div>
               </div>
               <div className={s.design_bg__wrapper}>
@@ -201,17 +181,7 @@ export const Home = () => {
             <h3 className={s.h3}>3D, motion design</h3>
             <div className={s.services_item__wrapper}>
               <div className={s.service_description}>
-                <div className={s.h3Subtitle}>
-                  Ux/ui design 3D
-                  <br />
-                  Motion design
-                  <br />
-                  Advertising target
-                  <br />
-                  Video, foto
-                  <br />
-                  2D Pixel Art
-                </div>
+                <div className={s.h3Subtitle} />
                 <div className={s.page}>/03</div>
               </div>
               <div className={s.motion_bg__wrapper}>
@@ -225,17 +195,7 @@ export const Home = () => {
             <h3 className={s.h3}>Advertising target</h3>
             <div className={s.services_item__wrapper}>
               <div className={s.service_description}>
-                <div className={s.h3Subtitle}>
-                  Ux/ui design 3D
-                  <br />
-                  Motion design
-                  <br />
-                  Advertising target
-                  <br />
-                  Video, foto
-                  <br />
-                  2D Pixel Art
-                </div>
+                <div className={s.h3Subtitle} />
                 <div className={s.page}>/04</div>
               </div>
               <div className={s.target_bg__wrapper}>
@@ -259,16 +219,29 @@ export const Home = () => {
               <div className={`${s.services_foto} ${s.services_item}`}>
                 <div className={s.services_itemMini__wrapper}>
                   <h3 className={s.h3}>Video,photo</h3>
-                  <div className={s.h3Subtitle}>local Boston</div>
+                  <div className={s.h3Subtitle} />
                 </div>
-                <div className={s.page}>/05</div>
+                <div className={s.services_itemMini__bottom}>
+                  <div className={s.page}>/05</div>
+                  <div className={s.foto_bg__wrapper}>
+                    <div className={s.foto_bg1} />
+                    <div className={s.foto_bg2} />
+                    <div className={s.foto_bg3} />
+                    <Triangle className={s.foto_bg4} />
+                  </div>
+                </div>
               </div>
               <div className={`${s.services_pixelArt} ${s.services_item}`}>
                 <div className={s.services_itemMini__wrapper}>
                   <h3 className={s.h3}>2D Pixel Art</h3>
-                  <div className={s.h3Subtitle}>local Boston</div>
+                  <div className={s.h3Subtitle} />
                 </div>
-                <div className={s.page}>/06</div>
+                <div className={s.services_itemMini__bottom}>
+                  <div className={s.page}>/06</div>
+                  <div className={s.pixel_bg__wrapper}>
+                    <Pixel className={s.pixel_bg} />
+                  </div>
+                </div>
               </div>
             </>
           ) : (
@@ -276,16 +249,25 @@ export const Home = () => {
               <div className={`${s.services_foto} ${s.services_item}`}>
                 <div className={s.services_itemMini__wrapper}>
                   <h3 className={s.h3}>Video,photo</h3>
-                  <div className={s.h3Subtitle}>local Boston</div>
+                  <div className={s.h3Subtitle} />
                 </div>
                 <div className={s.page}>/05</div>
+                <div className={s.foto_bg__wrapper}>
+                  <div className={s.foto_bg1} />
+                  <div className={s.foto_bg2} />
+                  <div className={s.foto_bg3} />
+                  <Triangle className={s.foto_bg4} />
+                </div>
               </div>
               <div className={`${s.services_pixelArt} ${s.services_item}`}>
                 <div className={s.services_itemMini__wrapper}>
                   <h3 className={s.h3}>2D Pixel Art</h3>
-                  <div className={s.h3Subtitle}>local Boston</div>
+                  <div className={s.h3Subtitle} />
                 </div>
                 <div className={s.page}>/06</div>
+                <div className={s.pixel_bg__wrapper}>
+                  <Pixel className={s.pixel_bg} />
+                </div>
               </div>
             </div>
           )}

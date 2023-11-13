@@ -1,6 +1,8 @@
 import { Link, useLocation } from 'react-router-dom';
 import Marquee from 'react-fast-marquee';
 
+import { useState } from 'react';
+
 import {
   dribbble, inst, linkedIn, Logo, X,
 } from '../../styles/icons';
@@ -8,6 +10,7 @@ import {
 import s from './footer.module.scss';
 
 export const Footer = () => {
+  const [showFooter, setShowFooter] = useState(true);
   const { pathname } = useLocation();
 
   return (

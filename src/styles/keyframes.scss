@@ -2626,3 +2626,909 @@
     height: 80px;
   }
 }
+
+@keyframes foto_bg1 {
+  0% {
+    background: #000000;
+    top: 0;
+    left: 0;
+  }
+  19% {
+    background: #000000;
+    top: 0;
+    left: 0;
+  }
+  21% {
+    top: 0;
+    left: -3px;
+  }
+  23% {
+    top: 0;
+    left: 41px;
+  }
+  25% {
+    background: $brand-primary-badge;
+    top: 0;
+    left: 38px;
+  }
+
+  44% {
+    top: 0;
+    left: 38px;
+  }
+  46% {
+    top: 0;
+    left: 41px;
+  }
+  48% {
+    top: 0;
+    left: -3px;
+  }
+
+  50% {
+    top: 0;
+    left: 0;
+  }
+
+  69% {
+    top: 0;
+    left: 0;
+  }
+
+  71% {
+    top: 0;
+    left: -3px;
+  }
+
+  73% {
+    top: 0;
+    left: 41px;
+  }
+
+  75% {
+    top: 0;
+    left: 38px;
+  }
+
+  94% {
+    background: $brand-primary-badge;
+    top: 0;
+    left: 38px;
+  }
+
+  96% {
+    top: 0;
+    left: 41px;
+  }
+
+  98% {
+    top: 0;
+    left: -3px;
+  }
+
+  100% {
+    background: #000000;
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes foto_bg2 {
+  0% {
+    background: #000000;
+    top: 0;
+    left: 38px;
+  }
+  19% {
+    background: #000000;
+    top: 0;
+    left: 38px;
+  }
+  21% {
+    top: 0;
+    left: 41px;
+  }
+  23% {
+    top: 0;
+    left: -3px;
+  }
+  25% {
+    background: $brand-primary-strong;
+    top: 0;
+    left: 0;
+  }
+
+  44% {
+    top: 0;
+    left: 0;
+  }
+  46% {
+    top: 0;
+    left: -3px;
+  }
+  48% {
+    top: 0;
+    left: 41px;
+  }
+
+  50% {
+    top: 0;
+    left: 38px;
+  }
+
+  69% {
+    top: 0;
+    left: 38px;
+  }
+
+  71% {
+    top: 0;
+    left: 41px;
+  }
+
+  73% {
+    top: 0;
+    left: -3px;
+  }
+
+  75% {
+    top: 0;
+    left: 0;
+  }
+
+  94% {
+    background: $brand-primary-strong;
+    top: 0;
+    left: 0;
+  }
+
+  96% {
+    top: 0;
+    left: -3px;
+  }
+
+  98% {
+    top: 0;
+    left: 41px;
+  }
+
+  100% {
+    background: #000000;
+    top: 0;
+    left: 38px;
+  }
+}
+
+@keyframes foto_bg3 {
+  0% {
+    background: #000000;
+    left: 0;
+  }
+  19% {
+    background: #000000;
+    left: 0;
+  }
+  21% {
+    left: -3px;
+  }
+  23% {
+    left: 41px;
+  }
+  25% {
+    background: $brand-primary-subtle;
+    left: 38px;
+  }
+
+  44% {
+    left: 38px;
+  }
+  46% {
+    left: 41px;
+  }
+  48% {
+    left: -3px;
+  }
+
+  50% {
+    left: 0;
+  }
+
+  69% {
+    left: 0;
+  }
+
+  71% {
+    left: -3px;
+  }
+
+  73% {
+    left: 41px;
+  }
+
+  75% {
+    left: 38px;
+  }
+
+  94% {
+    background: $brand-primary-subtle;
+    left: 38px;
+  }
+
+  96% {
+    left: 41px;
+  }
+
+  98% {
+    left: -3px;
+  }
+
+  100% {
+    background: #000000;
+    left: 0;
+  }
+}
+
+@keyframes foto_bg4 {
+  0% {
+    left: 38px;
+    transform: rotate(0);
+  }
+  19% {
+    left: 38px;
+    transform: rotate(0);
+  }
+  21% {
+    left: 41px;
+    transform: rotate(10deg);
+  }
+  23% {
+    left: -3px;
+    transform: rotate(-190deg);
+  }
+  25% {
+    left: 0;
+    transform: rotate(-180deg);
+  }
+
+  44% {
+    left: 0;
+    transform: rotate(-180deg);
+  }
+  46% {
+    left: -3px;
+    transform: rotate(-190deg);
+  }
+  48% {
+    left: 41px;
+    transform: rotate(10deg);
+  }
+
+  50% {
+    left: 38px;
+    transform: rotate(0);
+  }
+
+  69% {
+    left: 38px;
+    transform: rotate(0);
+  }
+
+  71% {
+    left: 41px;
+    transform: rotate(10deg);
+  }
+
+  73% {
+    left: -3px;
+    transform: rotate(-190deg);
+  }
+
+  75% {
+    left: 0;
+    transform: rotate(-180deg);
+  }
+
+  94% {
+    left: 0;
+    transform: rotate(-180deg);
+  }
+
+  96% {
+    left: -3px;
+    transform: rotate(-190deg);
+  }
+
+  98% {
+    left: 41px;
+    transform: rotate(10deg);
+  }
+
+  100% {
+    left: 38px;
+    transform: rotate(0);
+  }
+}
+
+@keyframes foto_bg4_inner {
+  0% {
+    fill: #000000;
+    left: 38px;
+  }
+  19% {
+    fill: #000000;
+    left: 38px;
+  }
+
+  25% {
+    fill: $brand-secondary-strong;
+  }
+
+  94% {
+    fill: $brand-secondary-strong;
+  }
+
+  100% {
+    fill: #000000;
+  }
+}
+
+@keyframes rect_color {
+  0% {
+    fill: $text_icons-Primary;
+    transform: scale(1);
+  }
+  19% {
+    fill: $text_icons-Primary;
+    transform: scale(1);
+  }
+  21% {
+    transform: scale(0.98);
+  }
+  25% {
+    fill: $brand-primary-subtle;
+    transform: scale(1);
+  }
+
+  44% {
+    fill: $brand-primary-subtle;
+    transform: scale(1);
+  }
+  46% {
+    transform: scale(0.98);
+  }
+
+  50% {
+    fill: $brand-primary-badge;
+    transform: scale(1);
+  }
+
+  69% {
+    fill: $brand-primary-badge;
+    transform: scale(1);
+  }
+
+  71% {
+    transform: scale(0.98);
+  }
+
+  75% {
+    fill: $brand-secondary-strong;
+    transform: scale(1);
+  }
+
+  94% {
+    fill: $brand-secondary-strong;
+    transform: scale(1);
+  }
+
+  96% {
+    transform: scale(0.98);
+  }
+
+  100% {
+    fill: $text_icons-Primary;
+    transform: scale(1);
+  }
+}
+
+@keyframes pixel_bg {
+  0% {
+    left: 0;
+  }
+  19% {
+    left: 0;
+  }
+  21% {
+    left: 2px;
+  }
+  23% {
+    left: -10px;
+  }
+  25% {
+    left: -8px;
+  }
+
+  44% {
+    left: -8px;
+  }
+  46% {
+    left: -10px;
+  }
+  48% {
+    left: 2px;
+  }
+
+  50% {
+    left: 0;
+  }
+
+  69% {
+    left: 0;
+  }
+
+  71% {
+    left: 2px;
+  }
+
+  73% {
+    left: -10px;
+  }
+
+  75% {
+    left: -8px;
+  }
+
+  94% {
+    left: -8px;
+  }
+
+  96% {
+    left: -10px;
+  }
+
+  98% {
+    left: 2px;
+  }
+
+  100% {
+    left: 0px;
+  }
+}
+
+@keyframes pixel_bg1 {
+  0% {
+    fill: $text_icons-Primary;
+    x: 16;
+  }
+  19% {
+    fill: $text_icons-Primary;
+    x: 16;
+  }
+  21% {
+    x: 14;
+  }
+  23% {
+    x: 34;
+  }
+  25% {
+    fill: $brand-primary-subtle;
+    x: 32;
+  }
+
+  44% {
+    fill: $brand-primary-subtle;
+    x: 32;
+  }
+  46% {
+    x: 34;
+  }
+  48% {
+    x: 14;
+  }
+
+  50% {
+    fill: $brand-primary-badge;
+    x: 16;
+  }
+
+  69% {
+    fill: $brand-primary-badge;
+    x: 16;
+  }
+
+  71% {
+    x: 14;
+  }
+
+  73% {
+    x: 34;
+  }
+
+  75% {
+    fill: $brand-secondary-strong;
+    x: 32;
+  }
+
+  94% {
+    fill: $brand-secondary-strong;
+    x: 32;
+  }
+
+  96% {
+    x: 34;
+  }
+
+  98% {
+    x: 14;
+  }
+
+  100% {
+    fill: $text_icons-Primary;
+    x: 16;
+  }
+}
+
+@keyframes pixel_bg48 {
+  0% {
+    fill: $text_icons-Primary;
+    x: 64;
+  }
+  19% {
+    fill: $text_icons-Primary;
+    x: 64;
+  }
+  21% {
+    x: 66;
+  }
+  23% {
+    x: 46;
+  }
+  25% {
+    fill: $brand-primary-subtle;
+    x: 48;
+  }
+
+  44% {
+    fill: $brand-primary-subtle;
+    x: 48;
+  }
+  46% {
+    x: 46;
+  }
+  48% {
+    x: 66;
+  }
+
+  50% {
+    fill: $brand-primary-badge;
+    x: 64;
+  }
+
+  69% {
+    fill: $brand-primary-badge;
+    x: 64;
+  }
+
+  71% {
+    x: 66;
+  }
+
+  73% {
+    x: 46;
+  }
+
+  75% {
+    fill: $brand-secondary-strong;
+    x: 48;
+  }
+
+  94% {
+    fill: $brand-secondary-strong;
+    x: 48;
+  }
+
+  96% {
+    x: 46;
+  }
+
+  98% {
+    x: 66;
+  }
+
+  100% {
+    fill: $text_icons-Primary;
+    x: 64;
+  }
+}
+
+@keyframes pixel_bg37 {
+  0% {
+    fill: $text_icons-Primary;
+    x: 72;
+  }
+  19% {
+    fill: $text_icons-Primary;
+    x: 72;
+  }
+  21% {
+    x: 74;
+  }
+  23% {
+    x: 54;
+  }
+  25% {
+    fill: $brand-primary-subtle;
+    x: 56;
+  }
+
+  44% {
+    fill: $brand-primary-subtle;
+    x: 56;
+  }
+  46% {
+    x: 54;
+  }
+  48% {
+    x: 74;
+  }
+
+  50% {
+    fill: $brand-primary-badge;
+    x: 72;
+  }
+
+  69% {
+    fill: $brand-primary-badge;
+    x: 72;
+  }
+
+  71% {
+    x: 74;
+  }
+
+  73% {
+    x: 54;
+  }
+
+  75% {
+    fill: $brand-secondary-strong;
+    x: 56;
+  }
+
+  94% {
+    fill: $brand-secondary-strong;
+    x: 56;
+  }
+
+  96% {
+    x: 54;
+  }
+
+  98% {
+    x: 74;
+  }
+
+  100% {
+    fill: $text_icons-Primary;
+    x: 72;
+  }
+}
+
+@keyframes pixel_bg27 {
+  0% {
+    fill: $text_icons-Primary;
+    x: 8;
+  }
+  19% {
+    fill: $text_icons-Primary;
+    x: 8;
+  }
+  21% {
+    x: 6;
+  }
+  23% {
+    x: 26;
+  }
+  25% {
+    fill: $brand-primary-subtle;
+    x: 24;
+  }
+
+  44% {
+    fill: $brand-primary-subtle;
+    x: 24;
+  }
+  46% {
+    x: 26;
+  }
+  48% {
+    x: 6;
+  }
+
+  50% {
+    fill: $brand-primary-badge;
+    x: 8;
+  }
+
+  69% {
+    fill: $brand-primary-badge;
+    x: 8;
+  }
+
+  71% {
+    x: 6;
+  }
+
+  73% {
+    x: 36;
+  }
+
+  75% {
+    fill: $brand-secondary-strong;
+    x: 24;
+  }
+
+  94% {
+    fill: $brand-secondary-strong;
+    x: 24;
+  }
+
+  96% {
+    x: 26;
+  }
+
+  98% {
+    x: 6;
+  }
+
+  100% {
+    fill: $text_icons-Primary;
+    x: 8;
+  }
+}
+
+@keyframes pixel_bg8 {
+  0% {
+    fill: $text_icons-Primary;
+    x: 0;
+  }
+  19% {
+    fill: $text_icons-Primary;
+    x: 0;
+  }
+  21% {
+    x: 2;
+  }
+  23% {
+    x: -10;
+  }
+  25% {
+    fill: $brand-primary-subtle;
+    x: -8;
+  }
+
+  44% {
+    fill: $brand-primary-subtle;
+    x: -8;
+  }
+  46% {
+    x: -10;
+  }
+  48% {
+    x: 2;
+  }
+
+  50% {
+    fill: $brand-primary-badge;
+    x: 0;
+  }
+
+  69% {
+    fill: $brand-primary-badge;
+    x: 0;
+  }
+
+  71% {
+    x: 2;
+  }
+
+  73% {
+    x: -10;
+  }
+
+  75% {
+    fill: $brand-secondary-strong;
+    x: -8;
+  }
+
+  94% {
+    fill: $brand-secondary-strong;
+    x: -8;
+  }
+
+  96% {
+    x: -10;
+  }
+
+  98% {
+    x: 2;
+  }
+
+  100% {
+    fill: $text_icons-Primary;
+    x: 0;
+  }
+}
+
+@keyframes pixel_bg46 {
+  0% {
+    fill: $text_icons-Primary;
+    x: 80;
+  }
+  19% {
+    fill: $text_icons-Primary;
+    x: 80;
+  }
+  21% {
+    x: 78;
+  }
+  23% {
+    x: 90;
+  }
+  25% {
+    fill: $brand-primary-subtle;
+    x: 88;
+  }
+
+  44% {
+    fill: $brand-primary-subtle;
+    x: 88;
+  }
+  46% {
+    x: 90;
+  }
+  48% {
+    x: 78;
+  }
+
+  50% {
+    fill: $brand-primary-badge;
+    x: 80;
+  }
+
+  69% {
+    fill: $brand-primary-badge;
+    x: 80;
+  }
+
+  71% {
+    x: 78;
+  }
+
+  73% {
+    x: 90;
+  }
+
+  75% {
+    fill: $brand-secondary-strong;
+    x: 88;
+  }
+
+  94% {
+    fill: $brand-secondary-strong;
+    x: 88;
+  }
+
+  96% {
+    x: 90;
+  }
+
+  98% {
+    x: 78;
+  }
+
+  100% {
+    fill: $text_icons-Primary;
+    x: 80;
+  }
+}

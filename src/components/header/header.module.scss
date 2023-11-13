@@ -31,6 +31,10 @@
       color: $text_icons-Primary;
       @include Text(normal, 0.875rem);
       text-decoration: none;
+
+      &:hover {
+        color: $brand-primary-strong;
+      }
     }
 
     .portfolio {
@@ -56,6 +60,10 @@
       padding: 11px 28px;
       border-radius: 30px;
       border: 1px solid #FFF;
+
+      a:focus {
+        color: $brand-primary-strong;
+      }
     }
 
     .request {

@@ -1,0 +1,247 @@
+@import "variables";
+@import "mixin";
+
+.wrapper {
+  height: calc(100vh - 182px);
+  margin-bottom: 70px;
+  @media screen and (max-width: 767px) {
+    height: auto;
+  }
+  .content {
+    margin: 70px auto;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    height: calc(100vh - 182px);
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+      gap: 10px;
+      height: auto;
+    }
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 577px;
+    width: 100%;
+    &_top {
+      height: 200px;
+      background: $brand-primary-badge;
+      border-radius: 50px;
+      padding: 30px;
+
+      h2 {
+        @include Text(normal, 3rem);
+      }
+    }
+
+    &_description {
+      height: 100%;
+      background: $bg-secondary-subtle;
+      border-radius: 50px;
+      display: flex;
+      align-items: flex-end;
+
+      p {
+        padding: 30px 84px 30px 30px;
+        @include Text(normal, 2rem);
+        @media screen and (max-width: 767px) {
+          @include Text(normal, 1.25rem);
+        }
+      }
+    }
+  }
+
+  .links {
+    max-width: calc(100% - 587px);
+    width: 100%;
+    height: 100%;
+    background: $bg-secondary-subtle;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    @media screen and (max-width: 767px) {
+      max-height: 637px;
+      max-width: 100%;
+    }
+
+    a {
+      text-decoration: none;
+      color: $text_icons-Primary;
+    }
+
+    .link_home {
+      @include Text(normal, 6rem);
+      margin: 47px 0 101px;
+      text-align: center;
+      @media screen and (max-width: 767px) {
+        @include Text(normal, 3rem);
+        margin: 50px 0 112px;
+      }
+    }
+
+    p {
+      @include Text(normal, 1.5rem);
+    }
+
+    .block_links {
+      width: 100%;
+      position: relative;
+      height: 100%;
+      @media screen and (max-width: 767px) {
+        width: 345px;
+        height: 306px;
+        margin-top: 118px;
+      }
+
+      a {
+        @include Text(normal, 2rem);
+        padding: 19px 30px;
+        position: absolute;
+        white-space: nowrap;
+        border-radius: 255px;
+        @media screen and (max-width: 767px) {
+          @include Text(normal, 1.25rem);
+          padding: 15px 20px;
+        }
+        &:nth-of-type(1) {
+          left: 4.82px;
+          bottom: 120.94px;
+          background: $brand-primary-strong;
+          transform: rotate(-12.831deg);
+          @media screen and (max-width: 767px) {
+            left: auto;
+            right: -4.7px;
+            bottom: 110.61px;
+            transform: rotate(26.377deg);
+          }
+        }
+        &:nth-of-type(2) {
+          right: 56.39px;
+          bottom: 281.68px;
+          background: $brand-primary-subtle;
+          transform: rotate(-4.129deg);
+          @media screen and (max-width: 767px) {
+            right: 4.18px;
+            bottom: 207.58px;
+            transform: rotate(-12.327deg);
+          }
+        }
+        &:nth-of-type(3) {
+          left: 136.53px;
+          bottom: 60.94px;
+          background: $brand-primary-badge;
+          transform: rotate(-22.959deg);
+          @media screen and (max-width: 767px) {
+            left: 1.53px;
+            bottom: 221.26px;
+            transform: rotate(-21.004deg);
+          }
+        }
+        &:nth-of-type(4) {
+          right: 72.82px;
+          bottom: 185.82px;
+          background: $brand-secondary-strong;
+          transform: rotate(8.402deg);
+          @media screen and (max-width: 767px) {
+            left: 7.11px;
+            bottom: 41.32px;
+            right: auto;
+            transform: rotate(-17.962deg);
+          }
+        }
+        &:nth-of-type(5) {
+          right: 59.86px;
+          bottom: 44.52px;
+          background: $text_icons-Primary;
+          transform: rotate(21.405deg);
+          color: #000000;
+          @media screen and (max-width: 767px) {
+            bottom: 17px;
+            right: 13px;
+            transform: rotate(0);
+          }
+        }
+        &:nth-of-type(6) {
+          left: 34.31px;
+          bottom: 240.8px;
+          background: $text_icons-Primary;
+          transform: rotate(14.013deg);
+          color: #000000;
+          @media screen and (max-width: 767px) {
+            bottom: 121.95px;
+            left: 3.42px;
+            transform: rotate(15.773deg);
+          }
+        }
+      }
+
+      svg {
+        width: 82px;
+        height: 82px;
+        position: absolute;
+        @media screen and (max-width: 767px) {
+          width: 40px;
+          height: 40px;
+        }
+        &:nth-of-type(1) {
+          left: 60px;
+          bottom: 15px;
+          @media screen and (max-width: 767px) {
+            left: auto;
+            bottom: 151px;
+            right: 43px;
+          }
+        }
+        &:nth-of-type(2) {
+          right: 263px;
+          bottom: 15px;
+          @media screen and (max-width: 767px) {
+            left: 5px;
+            bottom: 255px;
+            right: auto;
+          }
+        }
+        &:nth-of-type(3) {
+          left: 7px;
+          bottom: 180px;
+          @media screen and (max-width: 767px) {
+            left: 4px;
+            bottom: 71px;
+          }
+        }
+        &:nth-of-type(4) {
+          right: 29px;
+          bottom: 98px;
+          transform: rotate(26.869deg);
+          @media screen and (max-width: 767px) {
+            bottom: 134px;
+            right: 4px;
+          }
+        }
+        &:nth-of-type(5) {
+          right: 11.39px;
+          bottom: 221.39px;
+          transform: rotate(-28.537deg);
+          @media screen and (max-width: 767px) {
+            bottom: 266px;
+            right: auto;
+            left: 45px;
+          }
+        }
+        &:nth-of-type(6) {
+          left: 266px;
+          bottom: 262px;
+          @media screen and (max-width: 767px) {
+            bottom: 170px;
+            left: 102px;
+          }
+        }
+      }
+    }
+  }
+}

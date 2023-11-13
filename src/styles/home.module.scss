@@ -616,9 +616,15 @@
       display: flex;
       flex-direction: column;
       @media screen and (max-width: 767px) {
-        height: 100%;
         justify-content: space-between;
       }
+    }
+
+    .services_itemMini__bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      width: 100%;
     }
 
     .services_foto {
@@ -635,6 +641,57 @@
         @include Title(1.5rem)
 
       }
+
+      .foto_bg__wrapper {
+        position: relative;
+        width: 89px;
+        height: 83px;
+        @media screen and (max-width: 767px) {
+          margin: 0 auto;
+        }
+
+        .foto_bg1 {
+          width: 38px;
+          height: 38px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background: #000000;
+          border-radius: 255px;
+          animation: foto_bg1 8s linear infinite;
+        }
+        .foto_bg2 {
+          width: 38px;
+          height: 38px;
+          position: absolute;
+          top: 0;
+          left: 38px;
+          background: #000000;
+          border-radius: 255px;
+          animation: foto_bg2 8s linear infinite;
+        }
+        .foto_bg3 {
+          width: 38px;
+          height: 38px;
+          position: absolute;
+          top: 38px;
+          left: 0;
+          background: #000000;
+          animation: foto_bg3 8s linear infinite;
+        }
+        .foto_bg4 {
+          position: absolute;
+          width: 38px;
+          height: 38px;
+          top: 38px;
+          left: 38px;
+          animation: foto_bg4 8s linear infinite;
+
+          path {
+            animation: foto_bg4_inner 8s linear infinite;
+          }
+        }
+      }
     }
 
     .services_pixelArt {
@@ -650,6 +707,45 @@
 
       .h3 {
         @include Title(1.5rem)
+      }
+
+      .pixel_bg__wrapper {
+        height: 64px;
+        width: 88px;
+        position: relative;
+        @media screen and (max-width: 767px) {
+          margin: 0 auto;
+        }
+        .pixel_bg {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 104px;
+          animation: pixel_bg 8s linear infinite;
+
+          rect {
+            animation: rect_color 8s linear infinite;
+
+            &:nth-of-type(1) {
+              animation: pixel_bg1 8s linear infinite;
+            }
+            &:nth-of-type(48) {
+              animation: pixel_bg48 8s linear infinite;
+            }
+            &:nth-of-type(37) {
+              animation: pixel_bg37 8s linear infinite;
+            }
+            &:nth-of-type(27) {
+              animation: pixel_bg27 8s linear infinite;
+            }
+            &:nth-of-type(8) {
+              animation: pixel_bg8 8s linear infinite;
+            }
+            &:nth-of-type(46) {
+              animation: pixel_bg46 8s linear infinite;
+            }
+          }
+        }
       }
     }
   }
