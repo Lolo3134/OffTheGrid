@@ -21,12 +21,12 @@ import bag from '../assets/image/bag.webp';
 import modernn from '../assets/image/modernn.webp';
 
 export const Home = () => {
-  const [activeCard, setActiveCard] = useState<null | number>(null);
-  const [aboutRef, inView] = useInView();
-  const handleClick = (i: number | null) => {
-    setActiveCard(i === activeCard ? null : i);
-  };
-
+  const [aboutRef, inViewAbout] = useInView();
+  const [card1, inViewCard1] = useInView();
+  const [card2, inViewCard2] = useInView();
+  const [card3, inViewCard3] = useInView();
+  const [card4, inViewCard4] = useInView();
+  const [card5, inViewCard5] = useInView();
   const containerRef = useRef<HTMLDivElement>(null);
   const blockRef = useRef<HTMLDivElement>(null);
 
@@ -71,7 +71,10 @@ export const Home = () => {
             <h3 className={s.h3}>Web development</h3>
             <div className={s.services_item__wrapper}>
               <div className={s.service_description}>
-                <div className={s.h3Subtitle} />
+                <div className={s.h3Subtitle}>
+                  We specialize in web development, turning ideas into seamless, responsive websites.
+                  Elevate your online presence with our expertise in front-end and back-end technologies.
+                </div>
                 <div className={s.page}>/01</div>
               </div>
               <div className={s.dev_bg__wrapper}>
@@ -100,7 +103,11 @@ export const Home = () => {
             <h3 className={s.h3}>UX/UI design</h3>
             <div className={s.services_item__wrapper}>
               <div className={s.service_description}>
-                <div className={s.h3Subtitle} />
+                <div className={s.h3Subtitle}>
+                  Designing Experiences, Inspiring Connections: Our passion lies in UX/UI design.
+                  We create visually stunning interfaces that enhance user journeys,
+                  blending aesthetics with functionality to elevate your brand&apos;s digital impact
+                </div>
                 <div className={s.page}>/02</div>
               </div>
               <div className={s.design_bg__wrapper}>
@@ -181,7 +188,11 @@ export const Home = () => {
             <h3 className={s.h3}>3D, motion design</h3>
             <div className={s.services_item__wrapper}>
               <div className={s.service_description}>
-                <div className={s.h3Subtitle} />
+                <div className={s.h3Subtitle}>
+                  Elevate Your Vision with 3D Motion: Transforming concepts into captivating experiences,
+                  we specialize in 3D motion design. Our team brings ideas to life,
+                  adding depth and dynamism to your brand through cutting-edge visual storytelling
+                </div>
                 <div className={s.page}>/03</div>
               </div>
               <div className={s.motion_bg__wrapper}>
@@ -195,7 +206,10 @@ export const Home = () => {
             <h3 className={s.h3}>Advertising target</h3>
             <div className={s.services_item__wrapper}>
               <div className={s.service_description}>
-                <div className={s.h3Subtitle} />
+                <div className={s.h3Subtitle}>
+                  We excel in targeted advertising strategies, reaching your audience with precision.
+                  Our expertise ensures your message resonates, maximizing impact and driving results for your brand.
+                </div>
                 <div className={s.page}>/04</div>
               </div>
               <div className={s.target_bg__wrapper}>
@@ -312,7 +326,7 @@ export const Home = () => {
               <span>possibilities!</span>
             </h2>
           )}
-        <div className={inView ? s.about_animation : ''}>
+        <div className={inViewAbout ? s.about_animation : ''}>
           <img alt="icon Sort" className={s.sort} src={Sort} />
           <img alt="icon Folder" className={s.folder} src={Folder} />
           <div className={`${s.versatility} ${s.text_item}`}>Versatility</div>
@@ -334,8 +348,7 @@ export const Home = () => {
           </div>
         </div>
         <div className={s.cards}>
-          {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-static-element-interactions */}
-          <div className={`${s.card} ${s.card1} ${activeCard === 1 ? s.active : ''}`} onClick={() => handleClick(1)}>
+          <div ref={card1} className={`${s.card} ${s.card1} ${inViewCard1 && s.card1__bg}`}>
             <button className={s.switch} type="button">
               <div className={s.switch_circle} />
             </button>
@@ -347,8 +360,7 @@ export const Home = () => {
               </p>
             </div>
           </div>
-          {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-static-element-interactions */}
-          <div className={`${s.card} ${s.card2} ${activeCard === 2 ? s.active : ''}`} onClick={() => handleClick(2)}>
+          <div ref={card2} className={`${s.card} ${s.card2} ${inViewCard2 && s.card2__bg}`}>
             <button className={s.switch} type="button">
               <div className={s.switch_circle} />
             </button>
@@ -361,7 +373,7 @@ export const Home = () => {
             </div>
           </div>
           {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-static-element-interactions */}
-          <div className={`${s.card} ${s.card3} ${activeCard === 3 ? s.active : ''}`} onClick={() => handleClick(3)}>
+          <div ref={card3} className={`${s.card} ${s.card3} ${inViewCard3 && s.card3__bg}`}>
             <button className={s.switch} type="button">
               <div className={s.switch_circle} />
             </button>
@@ -374,7 +386,7 @@ export const Home = () => {
             </div>
           </div>
           {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-static-element-interactions */}
-          <div className={`${s.card} ${s.card4} ${activeCard === 4 ? s.active : ''}`} onClick={() => handleClick(4)}>
+          <div ref={card4} className={`${s.card} ${s.card4} ${inViewCard4 && s.card4__bg}`}>
             <button className={s.switch} type="button">
               <div className={s.switch_circle} />
             </button>
@@ -387,7 +399,7 @@ export const Home = () => {
             </div>
           </div>
           {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-static-element-interactions */}
-          <div className={`${s.card} ${s.card5} ${activeCard === 5 ? s.active : ''}`} onClick={() => handleClick(5)}>
+          <div ref={card5} className={`${s.card} ${s.card5} ${inViewCard5 && s.card5__bg}`}>
             <button className={s.switch} type="button">
               <div className={s.switch_circle} />
             </button>

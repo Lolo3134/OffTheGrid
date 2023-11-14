@@ -3532,3 +3532,12 @@
     x: 80;
   }
 }
+
+@keyframes card1__bg {
+  from {
+    background-position-y: 596px;
+  }
+  to {
+    background-position-y: 0;
+  }
+}
