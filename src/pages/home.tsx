@@ -4,6 +4,8 @@ import { useState, useEffect, useRef } from 'react';
 
 import { useInView } from 'react-intersection-observer';
 
+import { Link } from 'react-router-dom';
+
 import s from '../styles/home.module.scss';
 
 import {
@@ -67,7 +69,7 @@ export const Home = () => {
           </div>
         </div>
         <div className={s.services}>
-          <div className={`${s.services_dev} ${s.services_item}`}>
+          <Link className={`${s.services_dev} ${s.services_item}`} to="/webDev">
             <h3 className={s.h3}>Web development</h3>
             <div className={s.services_item__wrapper}>
               <div className={s.service_description}>
@@ -98,8 +100,8 @@ export const Home = () => {
                 <div className={`${s.dev_bg} ${s.dev_bg18}`} />
               </div>
             </div>
-          </div>
-          <div className={`${s.services_design} ${s.services_item}`}>
+          </Link>
+          <Link className={`${s.services_design} ${s.services_item}`} to="/design">
             <h3 className={s.h3}>UX/UI design</h3>
             <div className={s.services_item__wrapper}>
               <div className={s.service_description}>
@@ -183,8 +185,8 @@ export const Home = () => {
                 </div>
               </div>
             </div>
-          </div>
-          <div className={`${s.services_motion} ${s.services_item}`}>
+          </Link>
+          <Link className={`${s.services_motion} ${s.services_item}`} to="/motion">
             <h3 className={s.h3}>3D, motion design</h3>
             <div className={s.services_item__wrapper}>
               <div className={s.service_description}>
@@ -201,8 +203,8 @@ export const Home = () => {
                 </div>
               </div>
             </div>
-          </div>
-          <div className={`${s.services_target} ${s.services_item}`}>
+          </Link>
+          <Link className={`${s.services_target} ${s.services_item}`} to="/target">
             <h3 className={s.h3}>Advertising target</h3>
             <div className={s.services_item__wrapper}>
               <div className={s.service_description}>
@@ -227,10 +229,10 @@ export const Home = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </Link>
           {window.innerWidth > 767 ? (
             <>
-              <div className={`${s.services_foto} ${s.services_item}`}>
+              <Link className={`${s.services_foto} ${s.services_item}`} to="/video_foto">
                 <div className={s.services_itemMini__wrapper}>
                   <h3 className={s.h3}>Video,photo</h3>
                   <div className={s.h3Subtitle} />
@@ -244,8 +246,8 @@ export const Home = () => {
                     <Triangle className={s.foto_bg4} />
                   </div>
                 </div>
-              </div>
-              <div className={`${s.services_pixelArt} ${s.services_item}`}>
+              </Link>
+              <Link className={`${s.services_pixelArt} ${s.services_item}`} to="/pixelArt">
                 <div className={s.services_itemMini__wrapper}>
                   <h3 className={s.h3}>2D Pixel Art</h3>
                   <div className={s.h3Subtitle} />
@@ -256,11 +258,11 @@ export const Home = () => {
                     <Pixel className={s.pixel_bg} />
                   </div>
                 </div>
-              </div>
+              </Link>
             </>
           ) : (
             <div className={s.fotoArt}>
-              <div className={`${s.services_foto} ${s.services_item}`}>
+              <Link className={`${s.services_foto} ${s.services_item}`} to="video_foto">
                 <div className={s.services_itemMini__wrapper}>
                   <h3 className={s.h3}>Video,photo</h3>
                   <div className={s.h3Subtitle} />
@@ -272,8 +274,8 @@ export const Home = () => {
                   <div className={s.foto_bg3} />
                   <Triangle className={s.foto_bg4} />
                 </div>
-              </div>
-              <div className={`${s.services_pixelArt} ${s.services_item}`}>
+              </Link>
+              <Link className={`${s.services_pixelArt} ${s.services_item}`} to="pixelArt">
                 <div className={s.services_itemMini__wrapper}>
                   <h3 className={s.h3}>2D Pixel Art</h3>
                   <div className={s.h3Subtitle} />
@@ -282,7 +284,7 @@ export const Home = () => {
                 <div className={s.pixel_bg__wrapper}>
                   <Pixel className={s.pixel_bg} />
                 </div>
-              </div>
+              </Link>
             </div>
           )}
 

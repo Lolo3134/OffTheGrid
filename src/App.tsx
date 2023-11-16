@@ -2,6 +2,8 @@ import React, { lazy, Suspense, useContext } from 'react';
 
 import { Route, Routes, useLocation } from 'react-router-dom';
 
+import AnimatedCursor from 'react-animated-cursor';
+
 import s from './styles/App.module.scss';
 import { Header } from './components/header/header';
 import { Home } from './pages/home';
@@ -19,6 +21,17 @@ function App() {
 
   return (
     <div className={s.app}>
+      <AnimatedCursor
+        color="112, 63, 255"
+        innerScale={3}
+        innerSize={10}
+        outerAlpha={1}
+        outerScale={0}
+        outerSize={0}
+        innerStyle={{
+          mixBlendMode: 'difference',
+        }}
+      />
       <Header />
       <Suspense fallback={(
         <div className={s.loader__wrapper}>

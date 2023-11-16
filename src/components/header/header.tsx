@@ -29,7 +29,7 @@ export const Header = () => {
               <Link to="/about">About us</Link>
               <Link to="/webDev">Web Developers</Link>
               <div className={s.designed}>
-                Designed
+                <button type="button">Designed</button>
                 <div className={s.designed__wrapper}>
                   <div className={s.designed_block}>
                     <Link to="/design">UX/UI design</Link>

@@ -248,15 +248,25 @@
   .nav {
     .designed {
       position: relative;
+
+      button {
+        background: none;
+        border: none;
+        outline: none;
+        color: $text_icons-Primary;
+        padding: 0;
+
+        &:hover {
+          color: $brand-primary-strong;
+        }
+      }
     }
 
     .designed__wrapper {
       display: none;
     }
 
-    .designed:hover {
-      color: $brand-primary-strong;
-    }
+
 
     .designed:hover .designed__wrapper {
       display: flex;

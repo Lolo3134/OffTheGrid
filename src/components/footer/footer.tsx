@@ -95,13 +95,21 @@ export const Footer = () => {
           </nav>
         </div>
         <div className={s.right}>
-          <h3>Follow us on our social networks</h3>
+          <h4>Follow us on our social networks</h4>
           <div className={s.social}>
             <div className={s.links}>
-              <Link target="_blank" to="/dfd"><img alt="go to dribbble" className={s.link} src={dribbble} /></Link>
-              <Link target="_blank" to="/dfd"><img alt="go to X" className={s.link} src={X} /></Link>
-              <Link target="_blank" to="/dfd"><img alt="go to instagram" className={s.link} src={inst} /></Link>
-              <Link target="_blank" to="/dfd"><img alt="go to linkedIn" className={s.link} src={linkedIn} /></Link>
+              <div className={s.link__wrapper}>
+                <Link target="_blank" to="/dfd"><img alt="go to dribbble" className={s.link} src={dribbble} /></Link>
+              </div>
+              <div className={s.link__wrapper}>
+                <Link target="_blank" to="/dfd"><img alt="go to X" className={s.link} src={X} /></Link>
+              </div>
+              <div className={s.link__wrapper}>
+                <Link target="_blank" to="/dfd"><img alt="go to instagram" className={s.link} src={inst} /></Link>
+              </div>
+              <div className={s.link__wrapper}>
+                <Link target="_blank" to="/dfd"><img alt="go to linkedIn" className={s.link} src={linkedIn} /></Link>
+              </div>
             </div>
             <p>2023 OffTheGrid</p>
           </div>

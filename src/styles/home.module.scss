@@ -67,6 +67,9 @@
       border-radius: 30px;
       height: 244px;
       padding: 25px;
+      text-decoration: none;
+      white-space: normal;
+      color: $text_icons-Primary;
 
       @media screen and (max-width: 767px) {
         height: 368px;
@@ -711,7 +714,7 @@
 
       .pixel_bg__wrapper {
         height: 64px;
-        width: 88px;
+        width: 104px;
         position: relative;
         @media screen and (max-width: 767px) {
           margin: 0 auto;
@@ -1045,7 +1048,6 @@
   .card {
     border-radius: 35px;
     border: 3px solid $text_icons-Primary;
-    cursor: pointer;
     @media screen and (max-width: 767px) {
       position: sticky;
       top: 0;
