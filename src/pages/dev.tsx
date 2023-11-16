@@ -26,47 +26,47 @@ const Dev = () => {
   const card3 = useRef(null);
   const card4 = useRef(null);
 
-  useEffect(() => {
-    const cards = cardsWrapper.current;
-    const currCard1 = card1.current;
-    const currCard2 = card2.current;
-    const currCard3 = card3.current;
-    const currCard4 = card4.current;
-
-    if (cards && currCard1 && currCard2 && currCard3 && currCard4) {
-      tl.from(currCard1, {
-        x: '120%',
-      }).to(currCard1, {
-        left: '544',
-      });
-
-      tl.from(currCard2, {
-        transform: 'transition3D',
-      }).to(currCard2, {
-        left: '164',
-      });
-
-      tl.from(currCard3, {
-        left: '-700',
-      }).to(currCard3, {
-        left: '164',
-      });
-
-      tl.from(currCard4, {
-        left: '-700',
-      }).to(currCard4, {
-        left: '164',
-      });
-
-      ScrollTrigger.create({
-        trigger: cards, // Use title1 as the trigger for the ScrollTrigger
-        start: 'top',
-        end: 'bottom',
-        animation: tl,
-        scrub: true,
-      });
-    }
-  }, []);
+  // useEffect(() => {
+  //   const cards = cardsWrapper.current;
+  //   const currCard1 = card1.current;
+  //   const currCard2 = card2.current;
+  //   const currCard3 = card3.current;
+  //   const currCard4 = card4.current;
+  //
+  //   if (cards && currCard1 && currCard2 && currCard3 && currCard4) {
+  //     tl.from(currCard1, {
+  //       x: '120%',
+  //     }).to(currCard1, {
+  //       left: '544',
+  //     });
+  //
+  //     tl.from(currCard2, {
+  //       transform: 'transition3D',
+  //     }).to(currCard2, {
+  //       left: '164',
+  //     });
+  //
+  //     tl.from(currCard3, {
+  //       left: '-700',
+  //     }).to(currCard3, {
+  //       left: '164',
+  //     });
+  //
+  //     tl.from(currCard4, {
+  //       left: '-700',
+  //     }).to(currCard4, {
+  //       left: '164',
+  //     });
+  //
+  //     ScrollTrigger.create({
+  //       trigger: cards, // Use title1 as the trigger for the ScrollTrigger
+  //       start: 'top',
+  //       end: 'bottom',
+  //       animation: tl,
+  //       scrub: true,
+  //     });
+  //   }
+  // }, []);
 
   return (
     <>

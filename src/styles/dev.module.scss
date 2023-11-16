@@ -482,6 +482,7 @@
     top: 775px;
     position: relative;
     height: 1550px;
+    z-index: 5;
     @media screen and (max-width: 767px) {
       height: auto;
       position: static;

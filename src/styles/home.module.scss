@@ -1132,18 +1132,20 @@
     }
   }
 
-  .card.card1.card1__bg {
-    background-image: url("../assets/image/cardBg_pink.png");
-    background-size: cover;
-    background-position: 50%;
-    background-position-y: 0;
-    animation: card1__bg 1s linear;
-    background-repeat: no-repeat;
+  @media screen and (max-width: 767px){
+    .card.card1.card1__bg {
+      background-image: url("../assets/image/cardBg_pink.png");
+      background-size: cover;
+      background-position: 50%;
+      background-position-y: 0;
+      animation: card1__bg 1s linear;
+      background-repeat: no-repeat;
 
 
-    .switch_circle {
-      animation: switch 1.3s linear;
-      left: 50px;
+      .switch_circle {
+        animation: switch 1s linear;
+        left: 50px;
+      }
     }
   }
 
@@ -1169,19 +1171,20 @@
       }
     }
   }
+  @media screen and (max-width: 767px) {
+    .card.card2.card2__bg {
+      background-image: url("../assets/image/cardBg_green.png");
+      background-size: cover;
+      background-position: 50%;
+      background-position-y: 0;
+      animation: card1__bg 1s linear;
+      background-repeat: no-repeat;
 
-  .card.card2.card2__bg {
-    background-image: url("../assets/image/cardBg_green.png");
-    background-size: cover;
-    background-position: 50%;
-    background-position-y: 0;
-    animation: card1__bg 1s linear;
-    background-repeat: no-repeat;
 
-
-    .switch_circle {
-      animation: switch 1.3s linear;
-      left: 50px;
+      .switch_circle {
+        animation: switch 1s linear;
+        left: 50px;
+      }
     }
   }
 
@@ -1208,18 +1211,20 @@
     }
   }
 
-  .card.card3.card3__bg {
-    background-image: url("../assets/image/cardBg_orange.png");
-    background-size: cover;
-    background-position: 50%;
-    background-position-y: 0;
-    animation: card1__bg 1s linear;
-    background-repeat: no-repeat;
+  @media screen and (max-width: 767px) {
+    .card.card3.card3__bg {
+      background-image: url("../assets/image/cardBg_orange.png");
+      background-size: cover;
+      background-position: 50%;
+      background-position-y: 0;
+      animation: card1__bg 1s linear;
+      background-repeat: no-repeat;
 
 
-    .switch_circle {
-      animation: switch 1.3s linear;
-      left: 50px;
+      .switch_circle {
+        animation: switch 1s linear;
+        left: 50px;
+      }
     }
   }
 
@@ -1253,18 +1258,20 @@
     }
   }
 
-  .card.card4.card4__bg {
-    background-image: url("../assets/image/cardBg_purple.png");
-    background-size: cover;
-    background-position: 50%;
-    background-position-y: 0;
-    animation: card1__bg 1s linear;
-    background-repeat: no-repeat;
+  @media screen and (max-width: 767px) {
+    .card.card4.card4__bg {
+      background-image: url("../assets/image/cardBg_purple.png");
+      background-size: cover;
+      background-position: 50%;
+      background-position-y: 0;
+      animation: card1__bg 1s linear;
+      background-repeat: no-repeat;
 
 
-    .switch_circle {
-      animation: switch 1.3s linear;
-      left: 50px;
+      .switch_circle {
+        animation: switch 1s linear;
+        left: 50px;
+      }
     }
   }
 
@@ -1310,29 +1317,32 @@
     }
   }
 
-  .card.card5.card5__bg {
-    background-image: url("../assets/image/cardBg_white.png");
-    background-size: cover;
-    background-position: 50%;
-    background-position-y: 0;
-    animation: card1__bg 1s linear;
-    background-repeat: no-repeat;
+  @media screen and (max-width: 767px) {
+    .card.card5.card5__bg {
+      background-image: url("../assets/image/cardBg_white.png");
+      background-size: cover;
+      background-position: 50%;
+      background-position-y: 0;
+      animation: card1__bg 1s linear;
+      background-repeat: no-repeat;
 
 
-    .switch {
-      border: 3px solid $text_icons-Secondary;
+      .switch {
+        border: 3px solid $text_icons-Secondary;
 
-      .switch_circle {
-        animation: switch 1.3s linear;
-        left: 50px;
-        background: $text_icons-Secondary;
+        .switch_circle {
+          animation: switch 1s linear;
+          left: 50px;
+          background: $text_icons-Secondary;
+        }
       }
-    }
 
-    .card__wrapper {
-      color: $text-icons-Secondary;
-      .card_title {
+      .card__wrapper {
         color: $text-icons-Secondary;
+
+        .card_title {
+          color: $text-icons-Secondary;
+        }
       }
     }
   }

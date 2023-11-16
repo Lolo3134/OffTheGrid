@@ -1,5 +1,5 @@
-const TOKEN = process.env.REACT_APP_TOKEN;
-const CHAT_ID = process.env.REACT_APP_CHAT_ID;
+const TOKEN = process.env.REACT_APP_OFFTHEGRID_TOKEN;
+const CHAT_ID = process.env.REACT_APP_OFFTHEGRID_CHAT_ID;
 
 const URI_API: string = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 

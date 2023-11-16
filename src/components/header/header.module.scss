@@ -244,3 +244,42 @@
   }
 }
 
+.wrapper {
+  .nav {
+    .designed {
+      position: relative;
+    }
+
+    .designed__wrapper {
+      display: none;
+    }
+
+    .designed:hover {
+      color: $brand-primary-strong;
+    }
+
+    .designed:hover .designed__wrapper {
+      display: flex;
+      align-items: flex-end;
+      position: absolute;
+      top: 15px;
+      left: -58.5px;
+      z-index: 10;
+      width: 177px;
+      height: 235px;
+
+      .designed_block {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 39px 30px 30px;
+        background: url("../../assets/icon/bg.svg") no-repeat center;
+        width: 117px;
+        height: 146px;
+        @include Text(135%, 1rem);
+      }
+    }
+  }
+}
+
+

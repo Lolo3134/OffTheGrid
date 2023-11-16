@@ -75,35 +75,35 @@ const Motion = () => {
     // }
   }, []);
 
-  useEffect(() => {
-    const video = motionVideo.current;
-
-    if (video) {
-      tl.from(video, {
-        position: 'relative',
-        top: '0',
-        left: '0',
-        width: '655px',
-        height: '402px',
-      })
-        .to(video, {
-          top: '402px',
-          position: 'absolute',
-        }, '10%')
-        .to(video, {
-          width: '100%',
-          height: '811px',
-        }, '20%');
-
-      ScrollTrigger.create({
-        trigger: video,
-        start: 'top 20%',
-        end: 'top 200%',
-        animation: tl,
-        scrub: true,
-      });
-    }
-  }, []);
+  // useEffect(() => {
+  //   const video = motionVideo.current;
+  //
+  //   if (video) {
+  //     tl.from(video, {
+  //       position: 'relative',
+  //       top: '0',
+  //       left: '0',
+  //       width: '655px',
+  //       height: '402px',
+  //     })
+  //       .to(video, {
+  //         top: '402px',
+  //         position: 'absolute',
+  //       }, '10%')
+  //       .to(video, {
+  //         width: '100%',
+  //         height: '811px',
+  //       }, '20%');
+  //
+  //     ScrollTrigger.create({
+  //       trigger: video,
+  //       start: 'top 20%',
+  //       end: 'top 200%',
+  //       animation: tl,
+  //       scrub: true,
+  //     });
+  //   }
+  // }, []);
 
   return (
     <>

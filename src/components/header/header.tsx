@@ -28,7 +28,17 @@ export const Header = () => {
             <div className={s.pages}>
               <Link to="/about">About us</Link>
               <Link to="/webDev">Web Developers</Link>
-              <Link to="/motion">Designed</Link>
+              <div className={s.designed}>
+                Designed
+                <div className={s.designed__wrapper}>
+                  <div className={s.designed_block}>
+                    <Link to="/design">UX/UI design</Link>
+                    <Link to="/2d_3d">2D / 3D</Link>
+                    <Link to="/motion">Motion design</Link>
+                    <Link to="/graphic">Graphic design</Link>
+                  </div>
+                </div>
+              </div>
               <Link to="/contacts">Contacts</Link>
             </div>
             <div className={s.request}>
@@ -55,13 +65,29 @@ export const Header = () => {
                       Web Developers /
                       <span className={s.link_page__green}>02</span>
                     </Link>
-                    <Link to="/motion" onClick={() => setIsOpen(false)}>
-                      Designed /
+                    <Link to="/design" onClick={() => setIsOpen(false)}>
+                      UX/UI design /
                       <span className={s.link_page__pink}>03</span>
+                    </Link>
+                    <Link to="/motion" onClick={() => setIsOpen(false)}>
+                      3D, motion design /
+                      <span className={s.link_page__purple}>04</span>
+                    </Link>
+                    <Link to="/target" onClick={() => setIsOpen(false)}>
+                      Advertising target /
+                      <span className={s.link_page__orange}>05</span>
+                    </Link>
+                    <Link to="/video_foto" onClick={() => setIsOpen(false)}>
+                      Video,foto /
+                      <span className={s.link_page__green}>06</span>
+                    </Link>
+                    <Link to="/pixelArt" onClick={() => setIsOpen(false)}>
+                      2D Pixel Art /
+                      <span className={s.link_page__pink}>07</span>
                     </Link>
                     <Link to="/contacts" onClick={() => setIsOpen(false)}>
                       Contacts /
-                      <span className={s.link_page__purple}>04</span>
+                      <span className={s.link_page__purple}>08</span>
                     </Link>
                   </nav>
                   <Link className={s.contact} to="/contacts" onClick={() => setIsOpen(false)}>Contact us</Link>

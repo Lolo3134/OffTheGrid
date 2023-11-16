@@ -31,6 +31,7 @@ const Contacts:FC = () => {
       <b>Name: </b>${name}\n
       <b>Phone: </b>${phone}\n
       <b>Email: </b>${email}\n
+      <b>Choice: </b>${choice}\n
       <b>Describe: </b>${describe}\n`;
 
     sendMessage(formattedMessage).then((res) => {
@@ -40,6 +41,7 @@ const Contacts:FC = () => {
         setEmail('');
         setDescribe('');
         setIsSubmitted(true);
+        setChoice('website');
       }
     });
 
