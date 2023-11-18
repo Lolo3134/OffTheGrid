@@ -1,4 +1,6 @@
 @import "variables";
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
 
 body {
   background: $bg-primary;
@@ -10,6 +12,9 @@ body {
   user-select: none;
   font-size: 1rem;
   color: $text_icons-Primary;
+  @media screen and (max-width: 767px){
+    cursor: none!important;
+  }
 }
 
 .app {
@@ -27,6 +32,9 @@ h1, h2, h3, h4, p {
 }
 a, button {
   white-space: nowrap;
+  @media screen and (max-width: 767px) {
+    cursor: none!important;
+  }
 }
 
 @font-face {

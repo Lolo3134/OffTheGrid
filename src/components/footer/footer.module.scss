@@ -162,6 +162,7 @@ footer {
       color: $text_icons-Primary;
       text-decoration: none;
       @include Text(normal, 1rem);
+      width: fit-content;
 
       &:hover {
         color: $brand-primary-strong;

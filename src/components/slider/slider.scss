@@ -1,0 +1,79 @@
+@import "../../styles/keyframes";
+@import "../../styles/mixin";
+
+.slick-slide > div{
+  width: 496px!important;
+}
+
+.slick-slide {
+  width: 562px!important;
+}
+
+.slider {
+  &_card {
+    width: 494px;
+    padding: 25px;
+    border-radius: 30px;
+    border: 3px solid;
+    background: #000;
+
+    &_preview {
+      width: 494px;
+      max-height: 267px;
+      height: 100%;
+      border-radius: 20px;
+      object-fit: cover;
+      margin-bottom: 25px;
+    }
+
+    &_description {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    &_title {
+      @include Text(120%, 1.5rem);
+    }
+
+    &_date {
+      @include Text(120%, 1rem);
+    }
+  }
+}
+
+.card1 {
+  border-color: $text_icons-Primary;
+
+  .slider_card_year {
+    color: $brand-primary-badge;
+  }
+}
+.card2 {
+  border-color: $brand-primary-strong;
+
+  .slider_card_year {
+    color: $brand-secondary-strong;
+  }
+}
+.card3 {
+  border-color: $brand-primary-badge;
+
+  .slider_card_year {
+    color: $brand-primary-strong;
+  }
+}
+.card4 {
+  border-color: $brand-primary-subtle;
+
+  .slider_card_year {
+    color: $text_icons-Primary;
+  }
+}
+.card5 {
+  border-color: $brand-secondary-strong;
+
+  .slider_card_year {
+    color: $brand-primary-subtle;
+  }
+}

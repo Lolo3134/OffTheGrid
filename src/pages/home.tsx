@@ -74,8 +74,8 @@ export const Home = () => {
             <div className={s.services_item__wrapper}>
               <div className={s.service_description}>
                 <div className={s.h3Subtitle}>
-                  We specialize in web development, turning ideas into seamless, responsive websites.
-                  Elevate your online presence with our expertise in front-end and back-end technologies.
+                  {/* We specialize in web development, turning ideas into seamless, responsive websites. */}
+                  {/* Elevate your online presence with our expertise in front-end and back-end technologies. */}
                 </div>
                 <div className={s.page}>/01</div>
               </div>
@@ -106,9 +106,9 @@ export const Home = () => {
             <div className={s.services_item__wrapper}>
               <div className={s.service_description}>
                 <div className={s.h3Subtitle}>
-                  Designing Experiences, Inspiring Connections: Our passion lies in UX/UI design.
-                  We create visually stunning interfaces that enhance user journeys,
-                  blending aesthetics with functionality to elevate your brand&apos;s digital impact
+                  {/* Designing Experiences, Inspiring Connections: Our passion lies in UX/UI design. */}
+                  {/* We create visually stunning interfaces that enhance user journeys, */}
+                  {/* blending aesthetics with functionality to elevate your brand&apos;s digital impact */}
                 </div>
                 <div className={s.page}>/02</div>
               </div>
@@ -191,9 +191,9 @@ export const Home = () => {
             <div className={s.services_item__wrapper}>
               <div className={s.service_description}>
                 <div className={s.h3Subtitle}>
-                  Elevate Your Vision with 3D Motion: Transforming concepts into captivating experiences,
-                  we specialize in 3D motion design. Our team brings ideas to life,
-                  adding depth and dynamism to your brand through cutting-edge visual storytelling
+                  {/* Elevate Your Vision with 3D Motion: Transforming concepts into captivating experiences, */}
+                  {/* we specialize in 3D motion design. Our team brings ideas to life, */}
+                  {/* adding depth and dynamism to your brand through cutting-edge visual storytelling */}
                 </div>
                 <div className={s.page}>/03</div>
               </div>
@@ -209,8 +209,9 @@ export const Home = () => {
             <div className={s.services_item__wrapper}>
               <div className={s.service_description}>
                 <div className={s.h3Subtitle}>
-                  We excel in targeted advertising strategies, reaching your audience with precision.
-                  Our expertise ensures your message resonates, maximizing impact and driving results for your brand.
+                  {/* We excel in targeted advertising strategies, reaching your audience with precision. */}
+                  {/* Our expertise ensures your message resonates,
+                  maximizing impact and driving results for your brand. */}
                 </div>
                 <div className={s.page}>/04</div>
               </div>

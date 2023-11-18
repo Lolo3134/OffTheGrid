@@ -1066,7 +1066,6 @@
       padding: 5px;
       background: transparent;
       margin-bottom: 171px;
-      cursor: pointer;
       position: relative;
       @media screen and (max-width: 767px) {
         margin-bottom: 0;
@@ -1120,36 +1119,22 @@
     }
   }
 
-  @media screen and (min-width: 767px) {
-    .card.card1:hover {
-      background-image: url("../assets/image/cardBg_pink.png");
-      background-size: cover;
-      background-color: $brand-primary-subtle;
-      background-position: right;
 
-      .switch_circle {
-        animation: switch 0.2s linear;
-        left: 50px;
-      }
+  .card.card1.card1__bg {
+    background-image: url("../assets/image/cardBg_pink.png");
+    background-size: cover;
+    background-position: 50%;
+    background-position-y: 0;
+    animation: card1__bg 1s linear;
+    background-repeat: no-repeat;
+
+
+    .switch_circle {
+      animation: switch 1s linear;
+      left: 50px;
     }
   }
 
-  @media screen and (max-width: 767px){
-    .card.card1.card1__bg {
-      background-image: url("../assets/image/cardBg_pink.png");
-      background-size: cover;
-      background-position: 50%;
-      background-position-y: 0;
-      animation: card1__bg 1s linear;
-      background-repeat: no-repeat;
-
-
-      .switch_circle {
-        animation: switch 1s linear;
-        left: 50px;
-      }
-    }
-  }
 
   .card2 {
     grid-area: card2;
@@ -1160,33 +1145,18 @@
     }
   }
 
-  @media screen and (min-width: 767px) {
-    .card.card2:hover {
-      background-image: url("../assets/image/cardBg_green.png");
-      background-size: cover;
-      background-color: $brand-primary-subtle;
-      background-position: right;
-
-      .switch_circle {
-        animation: switch 0.2s linear;
-        left: 50px;
-      }
-    }
-  }
-  @media screen and (max-width: 767px) {
-    .card.card2.card2__bg {
-      background-image: url("../assets/image/cardBg_green.png");
-      background-size: cover;
-      background-position: 50%;
-      background-position-y: 0;
-      animation: card1__bg 1s linear;
-      background-repeat: no-repeat;
+  .card.card2.card2__bg {
+    background-image: url("../assets/image/cardBg_green.png");
+    background-size: cover;
+    background-position: 50%;
+    background-position-y: 0;
+    animation: card1__bg 1s linear;
+    background-repeat: no-repeat;
 
 
-      .switch_circle {
-        animation: switch 1s linear;
-        left: 50px;
-      }
+    .switch_circle {
+      animation: switch 1s linear;
+      left: 50px;
     }
   }
 
@@ -1199,36 +1169,21 @@
     }
   }
 
-  @media screen and (min-width: 767px) {
-    .card.card3:hover {
-      background-image: url("../assets/image/cardBg_orange.png");
-      background-size: cover;
-      background-color: $brand-primary-subtle;
-      background-position: right;
+  .card.card3.card3__bg {
+    background-image: url("../assets/image/cardBg_orange.png");
+    background-size: cover;
+    background-position: 50%;
+    background-position-y: 0;
+    animation: card1__bg 1s linear;
+    background-repeat: no-repeat;
 
-      .switch_circle {
-        animation: switch 0.2s linear;
-        left: 50px;
-      }
+
+    .switch_circle {
+      animation: switch 1s linear;
+      left: 50px;
     }
   }
 
-  @media screen and (max-width: 767px) {
-    .card.card3.card3__bg {
-      background-image: url("../assets/image/cardBg_orange.png");
-      background-size: cover;
-      background-position: 50%;
-      background-position-y: 0;
-      animation: card1__bg 1s linear;
-      background-repeat: no-repeat;
-
-
-      .switch_circle {
-        animation: switch 1s linear;
-        left: 50px;
-      }
-    }
-  }
 
   .card4 {
     grid-area: card4;
@@ -1246,34 +1201,18 @@
     }
   }
 
-  @media screen and (min-width: 767px) {
-    .card.card4:hover {
-      background-image: url("../assets/image/cardBg_purple.png");
-      background-size: cover;
-      background-color: $brand-primary-subtle;
-      background-position: right;
-
-      .switch_circle {
-        animation: switch 0.2s linear;
-        left: 50px;
-      }
-    }
-  }
-
-  @media screen and (max-width: 767px) {
-    .card.card4.card4__bg {
-      background-image: url("../assets/image/cardBg_purple.png");
-      background-size: cover;
-      background-position: 50%;
-      background-position-y: 0;
-      animation: card1__bg 1s linear;
-      background-repeat: no-repeat;
+  .card.card4.card4__bg {
+    background-image: url("../assets/image/cardBg_purple.png");
+    background-size: cover;
+    background-position: 50%;
+    background-position-y: 0;
+    animation: card1__bg 1s linear;
+    background-repeat: no-repeat;
 
 
-      .switch_circle {
-        animation: switch 1s linear;
-        left: 50px;
-      }
+    .switch_circle {
+      animation: switch 1s linear;
+      left: 50px;
     }
   }
 
@@ -1293,58 +1232,30 @@
     }
   }
 
-  @media screen and (min-width: 767px) {
-    .card.card5:hover {
-      background-image: url("../assets/image/cardBg_white.png");
-      background-size: cover;
-      background-color: $brand-primary-subtle;
-      background-position: right;
+  .card.card5.card5__bg {
+    background-image: url("../assets/image/cardBg_white.png");
+    background-size: cover;
+    background-position: 50%;
+    background-position-y: 0;
+    animation: card1__bg 1s linear;
+    background-repeat: no-repeat;
 
-      .switch {
-        border: 3px solid $text_icons-Secondary;
 
-        .switch_circle {
-          animation: switch 0.2s linear;
-          left: 50px;
-          background: $text_icons-Secondary;
-        }
-      }
+    .switch {
+      border: 3px solid $text_icons-Secondary;
 
-      .card__wrapper {
-        color: $text-icons-Secondary;
-        .card_title {
-          color: $text-icons-Secondary;
-        }
+      .switch_circle {
+        animation: switch 1s linear;
+        left: 50px;
+        background: $text_icons-Secondary;
       }
     }
-  }
 
-  @media screen and (max-width: 767px) {
-    .card.card5.card5__bg {
-      background-image: url("../assets/image/cardBg_white.png");
-      background-size: cover;
-      background-position: 50%;
-      background-position-y: 0;
-      animation: card1__bg 1s linear;
-      background-repeat: no-repeat;
+    .card__wrapper {
+      color: $text-icons-Secondary;
 
-
-      .switch {
-        border: 3px solid $text_icons-Secondary;
-
-        .switch_circle {
-          animation: switch 1s linear;
-          left: 50px;
-          background: $text_icons-Secondary;
-        }
-      }
-
-      .card__wrapper {
+      .card_title {
         color: $text-icons-Secondary;
-
-        .card_title {
-          color: $text-icons-Secondary;
-        }
       }
     }
   }
@@ -1406,7 +1317,6 @@
         border-radius: 255px;
         color: $text-icons-Primary;
         width: 280px;
-        cursor: pointer;
       }
 
       .showButton {

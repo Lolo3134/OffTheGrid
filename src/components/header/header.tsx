@@ -16,7 +16,7 @@ export const Header = () => {
   return (
     <header className={s.wrapper}>
       <div>
-        <Link to="/"><img alt="Logo" className={s.logo} src={logo} /></Link>
+        <Link to="/" onClick={() => setIsOpen(false)}><img alt="Logo" className={s.logo} src={logo} /></Link>
       </div>
       {window.innerWidth > 767
         ? (

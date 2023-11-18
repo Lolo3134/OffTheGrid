@@ -272,7 +272,6 @@
             outline: none;
             background: none;
             color: $text_icons-Primary;
-            cursor: pointer;
             &:hover {
               color: $brand-primary-strong;
             }
@@ -318,7 +317,6 @@
         border: none;
         outline: none;
         color: $text_icons-Primary;
-        cursor: pointer;
 
         @media screen and (max-width: 767px) {
           width: 100%;

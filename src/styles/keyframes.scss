@@ -3541,3 +3541,9 @@
     background-position-y: 0;
   }
 }
+
+@keyframes fillAnimation {
+  100% {
+    left: 0%;
+  }
+}

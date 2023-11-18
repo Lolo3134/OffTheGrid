@@ -1,0 +1,501 @@
+@import "mixin";
+@import "keyframes";
+
+.marquee {
+  position: absolute;
+  top: 116px;
+  @include Text(184px, 11.5rem);
+  left: 0;
+  height: 220px;
+  @media screen and (max-width: 767px) {
+    top: 88px;
+    @include Text(normal, 3rem);
+    height: 58px;
+  }
+}
+.marquee__bottom {
+  top: 145px;
+}
+
+.about {
+  margin-top: 360px;
+  margin-bottom: 121px;
+  padding: 30px 20px 0;
+  border-radius: 50px;
+  background: $bg-secondary-subtle;
+  @media screen and (max-width: 767px) {
+    padding: 20px 22px 0;
+    margin-top: 244px;
+    margin-bottom: 74px;
+  }
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 82px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 41px;
+    }
+  }
+  &_badge {
+    padding: 15px 20px;
+    border-radius: 255px;
+    border: 2px solid $text_icons-Primary;
+    @media screen and (max-width: 767px) {
+      padding: 10px;
+      @include Text(normal, 0.75rem);
+    }
+  }
+  &_title {
+    margin: 0 auto;
+    @include Text(84px, 5.25rem);
+    text-align: center;
+    margin-bottom: 188px;
+    @media screen and (max-width: 767px) {
+      @include Text(36px, 2rem);
+      margin-bottom: 182px;
+    }
+
+    svg {
+      vertical-align: middle;
+      margin: 0 20px;
+      @media screen and (max-width: 767px) {
+        margin: 0 10px;
+        width: 36px;
+        height: 36px;
+      }
+    }
+  }
+  &_blocks {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    @media screen and (max-width: 767px) {
+      width: 305px;
+      margin: 0 auto;
+    }
+    span {
+      @include Text(normal, 2rem);
+      border-radius: 255px;
+      padding: 22px 30px;
+      white-space: nowrap;
+      @media screen and (max-width: 767px) {
+        @include Text(normal, 1.25rem);
+        padding: 15px 20px;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+    span:nth-of-type(1) {
+      position: absolute;
+      bottom: 9px;
+      right: 362px;
+      background: $brand-primary-strong;
+      @media screen and (max-width: 767px) {
+        bottom: 46.64px;
+        right: -21.95px;
+        transform: rotate(20.751deg);
+      }
+    }
+    span:nth-of-type(2) {
+      position: absolute;
+      bottom: 44.23px;
+      right: 105.51px;
+      background: $brand-primary-badge;
+      transform: rotate(-23.462deg);
+      @media screen and (max-width: 767px) {
+        bottom: 98.44px;
+        left: 9.16px;
+        right: auto;
+        transform: rotate(-15deg);
+      }
+    }
+    span:nth-of-type(3) {
+      position: absolute;
+      bottom: 48.74px;
+      left: 86.49px;
+      background: $brand-secondary-strong;
+      transform: rotate(22.651deg);
+      @media screen and (max-width: 767px) {
+        bottom: 174.21px;
+        left: 4.07px;
+        transform: rotate(-29.918deg);
+      }
+    }
+    span:nth-of-type(4) {
+      position: absolute;
+      bottom: 50.27px;
+      left: 365.57px;
+      background: $text_icons-Primary;
+      color: #000000;
+      transform: rotate(-18.309deg);
+      @media screen and (max-width: 767px) {
+        bottom: 18.54px;
+        left: -19.42px;
+        transform: rotate(7.75deg);
+      }
+    }
+    span:nth-of-type(5) {
+      position: absolute;
+      bottom: 153.68px;
+      left: 330.27px;
+      background: $brand-primary-subtle;
+      transform: rotate(7.642deg);
+      @media screen and (max-width: 767px) {
+        bottom: 144.28px;
+        right: -21.03px;
+        left: auto;
+        transform: rotate(14.06deg);
+      }
+    }
+
+    svg:nth-of-type(1) {
+      position: absolute;
+      bottom: 8px;
+      left: 61px;
+      @media screen and (max-width: 767px) {
+        bottom: 5px;
+        left: auto;
+        right: 52px;
+      }
+    }
+    svg:nth-of-type(2) {
+      position: absolute;
+      bottom: 9px;
+      right: 61px;
+      @media screen and (max-width: 767px) {
+        bottom: 84.41px;
+        right: -18.59px;
+        transform: rotate(-30.034deg);
+      }
+    }
+    svg:nth-of-type(3) {
+      position: absolute;
+      bottom: 81px;
+      left: 331px;
+      @media screen and (max-width: 767px) {
+        bottom: 123px;
+        left: -19px;
+      }
+    }
+    svg:nth-of-type(4) {
+      position: absolute;
+      bottom: 85px;
+      right: 318px;
+      @media screen and (max-width: 767px) {
+        bottom: 70px;
+        left: 119px;
+        right: auto;
+      }
+    }
+    svg:nth-of-type(5) {
+      position: absolute;
+      bottom: 119px;
+      right: 240px;
+      @media screen and (max-width: 767px) {
+        bottom: 97px;
+        right: 20px;
+      }
+    }
+  }
+}
+
+.description {
+  margin-bottom: 121px;
+
+  &_title {
+    max-width: 1246px;
+    @include Text(100%, 5.25rem);
+    width: 100%;
+    margin: 0 auto 135px;
+    text-align: center;
+    @media screen and (max-width: 767px) {
+      max-width: 345px;
+      @include Text(100%, 2rem);
+      margin: 0 auto 109px;
+    }
+  }
+
+  &_text {
+    @include Text(100%, 2rem);
+    max-width: 801px;
+    width: 100%;
+    margin: 0 auto 59px;
+    @media screen and (max-width: 767px) {
+      @include Text(120%, 1.25rem);
+      margin-bottom: 52px;
+    }
+
+    span {
+      margin: 0 7px;
+      &:nth-of-type(1) {
+        color: $brand-primary-badge;
+      }
+      &:nth-of-type(2) {
+        color: $brand-primary-subtle;
+      }
+      &:nth-of-type(3) {
+        color: $brand-secondary-strong;
+        margin-right: 0;
+      }
+    }
+  }
+
+  &_subText {
+    display: flex;
+    margin: 0 auto 135px;
+    max-width: 801px;
+    width: 100%;
+    align-items: flex-end;
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+      gap: 25px;
+      margin: 0 auto 92px;
+    }
+
+    p {
+      max-width: 443px;
+      width: 100%;
+      @include Text(150%, 1rem);
+      @media screen and (max-width: 767px) {
+        @include Text(20px, 0.875rem);
+      }
+    }
+
+    .link {
+      color: $brand-primary-strong;
+      @include Text(100%, 1.5rem);
+      margin: 0 auto;
+      @media screen and (max-width: 767px) {
+        @include Text(24px, 1.25rem);
+        margin: 0 auto 0 0;
+      }
+    }
+  }
+}
+
+.services {
+  margin-bottom: 101px;
+
+  &_title {
+    max-width: 1216px;
+    width: 100%;
+    @include Text(84px, 5.25rem);
+    margin: 0 auto 142px;
+    text-align: center;
+    @media screen and (max-width: 767px) {
+      @include Text(100%, 2rem);
+      margin-bottom: 57px;
+    }
+  }
+
+  .item {
+    border-radius: 35px;
+    border: 3px solid $text_icons-Primary;
+    padding: 50px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &:not(:nth-of-type(1)) {
+      margin-top: -3px;
+    }
+    @media screen and (max-width: 767px) {
+      //position: sticky;
+      //top: 0;
+      padding: 25px;
+      flex-direction: column;
+      align-items: flex-start;
+      //justify-content: space-between;
+      //height: 490px;
+      //background: #000;
+    }
+
+    .switch {
+      border-radius: 255px;
+      border: 3px solid $text_icons-Primary;
+      width: 90px;
+      height: 44px;
+      padding: 5px;
+      background: transparent;
+      position: relative;
+      @media screen and (max-width: 767px) {
+        margin-bottom: 200px;
+      }
+
+      .switch_circle {
+        width: 30px;
+        height: 30px;
+        background: $text_icons-Primary;
+        border-radius: 255px;
+        position: absolute;
+        left: 5px;
+        top: calc(50% - 15px);
+      }
+    }
+
+    &_title {
+      @include Title(2rem);
+      @media screen and (max-width: 767px) {
+        @include Title(1.5rem);
+        margin-bottom: 19px;
+      }
+    }
+
+    &_description {
+      @include Text(normal, 1rem);
+      max-width: 407px;
+      @media screen and (max-width: 767px) {
+        @include Text(normal, 1rem);
+        max-width: 268px;
+      }
+    }
+  }
+
+  .item1__bg {
+    height: 100%;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+
+    .switch {
+      .switch_circle {
+        animation: switch 1s linear;
+        left: 50px;
+      }
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background-color: $brand-primary-subtle;
+      animation: fillAnimation 1s linear forwards;
+      z-index: -10;
+    }
+  }
+
+  .item2__bg {
+    height: 100%;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+
+    .switch {
+      .switch_circle {
+        animation: switch 1s linear;
+        left: 50px;
+      }
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background-color: $brand-primary-strong;
+      animation: fillAnimation 1s linear forwards;
+      z-index: -10;
+    }
+  }
+
+  .item3__bg {
+    height: 100%;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+
+    .switch {
+      .switch_circle {
+        animation: switch 1s linear;
+        left: 50px;
+      }
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background-color: $brand-secondary-strong;
+      animation: fillAnimation 1s linear forwards;
+      z-index: -10;
+    }
+  }
+
+  .item4__bg {
+    height: 100%;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+
+    .switch {
+      .switch_circle {
+        animation: switch 1s linear;
+        left: 50px;
+      }
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background-color: $brand-primary-badge;
+      animation: fillAnimation 1s linear forwards;
+      z-index: -10;
+    }
+  }
+
+  .item5__bg {
+    height: 100%;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+
+    .item_title {
+      transition: color 1s linear;
+      color: $text_icons-Secondary;
+    }
+
+    .item_description {
+      transition: color 1s linear;
+      color: $text_icons-Secondary;
+    }
+
+    .switch {
+      border: 3px solid $text_icons-Secondary;
+
+      .switch_circle {
+        animation: switch 1s linear;
+        left: 50px;
+        background: $text_icons-Secondary;
+      }
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background-color: $text_icons-Primary;
+      animation: fillAnimation 1s linear forwards;
+      z-index: -10;
+    }
+  }
+}
