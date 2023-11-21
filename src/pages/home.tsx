@@ -12,7 +12,11 @@ import {
   Arrow, At, Fire, Folder, Hashtag, Heart, Pixel, Share, Sort, Triangle,
 } from '../styles/icons';
 
-import team from '../assets/image/teams.webp';
+import team1 from '../assets/image/team1.png';
+import team2 from '../assets/image/team2.png';
+import team3 from '../assets/image/tems3.png';
+import team4 from '../assets/image/team4.png';
+import team5 from '../assets/image/team5.png';
 import chargemate from '../assets/image/chargemate.png';
 import page from '../assets/image/page.webp';
 import chefAlex from '../assets/image/chefAlex.png';
@@ -74,8 +78,7 @@ export const Home = () => {
             <div className={s.services_item__wrapper}>
               <div className={s.service_description}>
                 <div className={s.h3Subtitle}>
-                  {/* We specialize in web development, turning ideas into seamless, responsive websites. */}
-                  {/* Elevate your online presence with our expertise in front-end and back-end technologies. */}
+                  (click on me)
                 </div>
                 <div className={s.page}>/01</div>
               </div>
@@ -106,9 +109,7 @@ export const Home = () => {
             <div className={s.services_item__wrapper}>
               <div className={s.service_description}>
                 <div className={s.h3Subtitle}>
-                  {/* Designing Experiences, Inspiring Connections: Our passion lies in UX/UI design. */}
-                  {/* We create visually stunning interfaces that enhance user journeys, */}
-                  {/* blending aesthetics with functionality to elevate your brand&apos;s digital impact */}
+                  (click on me)
                 </div>
                 <div className={s.page}>/02</div>
               </div>
@@ -191,9 +192,7 @@ export const Home = () => {
             <div className={s.services_item__wrapper}>
               <div className={s.service_description}>
                 <div className={s.h3Subtitle}>
-                  {/* Elevate Your Vision with 3D Motion: Transforming concepts into captivating experiences, */}
-                  {/* we specialize in 3D motion design. Our team brings ideas to life, */}
-                  {/* adding depth and dynamism to your brand through cutting-edge visual storytelling */}
+                  (click on me)
                 </div>
                 <div className={s.page}>/03</div>
               </div>
@@ -209,9 +208,7 @@ export const Home = () => {
             <div className={s.services_item__wrapper}>
               <div className={s.service_description}>
                 <div className={s.h3Subtitle}>
-                  {/* We excel in targeted advertising strategies, reaching your audience with precision. */}
-                  {/* Our expertise ensures your message resonates,
-                  maximizing impact and driving results for your brand. */}
+                  (click on me)
                 </div>
                 <div className={s.page}>/04</div>
               </div>
@@ -236,7 +233,7 @@ export const Home = () => {
               <Link className={`${s.services_foto} ${s.services_item}`} to="/video_foto">
                 <div className={s.services_itemMini__wrapper}>
                   <h3 className={s.h3}>Video,photo</h3>
-                  <div className={s.h3Subtitle} />
+                  <div className={s.h3Subtitle}>(click on me)</div>
                 </div>
                 <div className={s.services_itemMini__bottom}>
                   <div className={s.page}>/05</div>
@@ -251,7 +248,7 @@ export const Home = () => {
               <Link className={`${s.services_pixelArt} ${s.services_item}`} to="/pixelArt">
                 <div className={s.services_itemMini__wrapper}>
                   <h3 className={s.h3}>2D Pixel Art</h3>
-                  <div className={s.h3Subtitle} />
+                  <div className={s.h3Subtitle}>(click on me)</div>
                 </div>
                 <div className={s.services_itemMini__bottom}>
                   <div className={s.page}>/06</div>
@@ -266,7 +263,7 @@ export const Home = () => {
               <Link className={`${s.services_foto} ${s.services_item}`} to="video_foto">
                 <div className={s.services_itemMini__wrapper}>
                   <h3 className={s.h3}>Video,photo</h3>
-                  <div className={s.h3Subtitle} />
+                  <div className={s.h3Subtitle}>(click on me)</div>
                 </div>
                 <div className={s.page}>/05</div>
                 <div className={s.foto_bg__wrapper}>
@@ -279,7 +276,7 @@ export const Home = () => {
               <Link className={`${s.services_pixelArt} ${s.services_item}`} to="pixelArt">
                 <div className={s.services_itemMini__wrapper}>
                   <h3 className={s.h3}>2D Pixel Art</h3>
-                  <div className={s.h3Subtitle} />
+                  <div className={s.h3Subtitle}>(click on me)</div>
                 </div>
                 <div className={s.page}>/06</div>
                 <div className={s.pixel_bg__wrapper}>
@@ -432,38 +429,38 @@ export const Home = () => {
         </div>
         <div className={s.teams_cards} id="teams">
           <div className={`${s.teams_card} ${s.teams_card1}`} id="card1">
-            <img alt="Senior Front-end Developer" className={s.teams_card__photo} src={team} />
+            <img alt="Senior Front-end Developer" className={s.teams_card__photo} src={team1} />
             <div className={s.teams_card__wrapper}>
-              <p className={s.teams_card__name}>Serge</p>
-              <p className={s.teams_card__description}>Senior Front-end Developer</p>
+              <p className={s.teams_card__name}>Maria</p>
+              <p className={s.teams_card__description}>UX/UI designer</p>
             </div>
           </div>
           <div className={`${s.teams_card} ${s.teams_card2}`}>
-            <img alt="Senior Front-end Developer" className={s.teams_card__photo} src={team} />
+            <img alt="Senior Front-end Developer" className={s.teams_card__photo} src={team2} />
             <div className={s.teams_card__wrapper}>
               <p className={s.teams_card__name}>Serge</p>
               <p className={s.teams_card__description}>Senior Front-end Developer</p>
             </div>
           </div>
           <div className={`${s.teams_card} ${s.teams_card3}`}>
-            <img alt="Senior Front-end Developer" className={s.teams_card__photo} src={team} />
+            <img alt="Senior Front-end Developer" className={s.teams_card__photo} src={team3} />
             <div className={s.teams_card__wrapper}>
-              <p className={s.teams_card__name}>Serge</p>
+              <p className={s.teams_card__name}>Nico</p>
               <p className={s.teams_card__description}>Senior Front-end Developer</p>
             </div>
           </div>
           <div className={`${s.teams_card} ${s.teams_card4}`}>
-            <img alt="Senior Front-end Developer" className={s.teams_card__photo} src={team} />
+            <img alt="Senior Front-end Developer" className={s.teams_card__photo} src={team4} />
             <div className={s.teams_card__wrapper}>
-              <p className={s.teams_card__name}>Serge</p>
+              <p className={s.teams_card__name}>Emma</p>
               <p className={s.teams_card__description}>Senior Front-end Developer</p>
             </div>
           </div>
           <div className={`${s.teams_card} ${s.teams_card5}`}>
-            <img alt="Senior Front-end Developer" className={s.teams_card__photo} src={team} />
+            <img alt="Senior Front-end Developer" className={s.teams_card__photo} src={team5} />
             <div className={s.teams_card__wrapper}>
-              <p className={s.teams_card__name}>Serge</p>
-              <p className={s.teams_card__description}>Senior Front-end Developer</p>
+              <p className={s.teams_card__name}>Danial</p>
+              <p className={s.teams_card__description}>Developer, promo admin</p>
             </div>
           </div>
         </div>
@@ -478,7 +475,11 @@ export const Home = () => {
             ? (
               <>
                 <div className={s.projects_cards__wrapper}>
-                  <div className={`${s.projects_card} ${s.projects_card1}`}>
+                  <Link
+                    className={`${s.projects_card} ${s.projects_card1}`}
+                    target="_blank"
+                    to="https://chargemate.me/"
+                  >
                     <img alt="website chargemate" className={s.projects_card__preview} src={chargemate} />
                     <div className={s.projects_card__wrapper}>
                       <h4 className={s.projects_card__title}>Сharge mate</h4>
@@ -487,7 +488,7 @@ export const Home = () => {
                         a healthcare provider, streamlining their appointment booking process...
                       </p>
                     </div>
-                  </div>
+                  </Link>
                   <div className={`${s.projects_card} ${s.projects_card5}`}>
                     <img alt="page" className={s.projects_card__preview} src={page} />
                     <div className={s.projects_card__wrapper}>
@@ -500,7 +501,11 @@ export const Home = () => {
                   </div>
                 </div>
                 <div className={s.projects_cards__wrapper}>
-                  <div className={`${s.projects_card} ${s.projects_card2}`}>
+                  <Link
+                    className={`${s.projects_card} ${s.projects_card2}`}
+                    target="_blank"
+                    to="https://chefalex.co/"
+                  >
                     <img alt="website chefAlex" className={s.projects_card__preview} src={chefAlex} />
                     <div className={s.projects_card__wrapper}>
                       <h4 className={s.projects_card__title}>Chef Alex</h4>
@@ -509,7 +514,7 @@ export const Home = () => {
                         a healthcare provider, streamlining their appointment booking process...
                       </p>
                     </div>
-                  </div>
+                  </Link>
                   <div className={`${s.projects_card} ${s.projects_card6}`}>
                     <img alt="screens" className={s.projects_card__preview} src={screens} />
                     <div className={s.projects_card__wrapper}>

@@ -33,7 +33,7 @@ export const Header = () => {
                 <div className={s.designed__wrapper}>
                   <div className={s.designed_block}>
                     <Link to="/design">UX/UI design</Link>
-                    <Link to="/2d_3d">2D / 3D</Link>
+                    <Link to="/2d_3d">2D</Link>
                     <Link to="/motion">Motion design</Link>
                     <Link to="/graphic">Graphic design</Link>
                   </div>

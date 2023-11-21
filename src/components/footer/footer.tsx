@@ -105,7 +105,9 @@ export const Footer = () => {
                 <Link target="_blank" to="/dfd"><img alt="go to X" className={s.link} src={X} /></Link>
               </div>
               <div className={s.link__wrapper}>
-                <Link target="_blank" to="/dfd"><img alt="go to instagram" className={s.link} src={inst} /></Link>
+                <Link target="_blank" to="https://www.instagram.com/offthegrid_lab">
+                  <img alt="go to instagram" className={s.link} src={inst} />
+                </Link>
               </div>
               <div className={s.link__wrapper}>
                 <Link target="_blank" to="/dfd"><img alt="go to linkedIn" className={s.link} src={linkedIn} /></Link>

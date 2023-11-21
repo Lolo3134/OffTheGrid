@@ -156,7 +156,7 @@ const Design = () => {
             <button className={s.switch} type="button">
               <div className={s.switch_circle} />
             </button>
-            <h3 className={s.item_title}>Digital design</h3>
+            <h3 className={s.item_title}>Social media design</h3>
             <p className={s.item_description}>
               We don&apos;t take the easy way out.
               We explore, experiment, and craft unique solutions that set your brand apart from the crowd.

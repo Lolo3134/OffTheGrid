@@ -308,6 +308,7 @@
       padding: 25px;
       flex-direction: column;
       align-items: flex-start;
+      position: sticky;
     }
 
     .switch {
@@ -353,9 +354,13 @@
 
   .item1__bg {
     height: 100%;
-    background-color: transparent;
+    background-color: #000000;
     position: relative;
     overflow: hidden;
+    @media screen and (max-width: 767px) {
+      position: sticky;
+      top: 0px;
+    }
 
     .switch {
       .switch_circle {
@@ -382,6 +387,11 @@
     background-color: transparent;
     position: relative;
     overflow: hidden;
+    background-color: #000000;
+    @media screen and (max-width: 767px) {
+      position: sticky;
+      top: 25px;
+    }
 
     .switch {
       .switch_circle {
@@ -408,6 +418,11 @@
     background-color: transparent;
     position: relative;
     overflow: hidden;
+    background-color: #000000;
+    @media screen and (max-width: 767px) {
+      position: sticky;
+      top: 50px;
+    }
 
     .switch {
       .switch_circle {
@@ -434,6 +449,11 @@
     background-color: transparent;
     position: relative;
     overflow: hidden;
+    background-color: #000000;
+    @media screen and (max-width: 767px) {
+      position: sticky;
+      top: 75px;
+    }
 
     .switch {
       .switch_circle {
@@ -460,6 +480,11 @@
     background-color: transparent;
     position: relative;
     overflow: hidden;
+    background-color: #000000;
+    @media screen and (max-width: 767px) {
+      position: sticky;
+      top: 100px;
+    }
 
     .item_title {
       transition: color 1s linear;
