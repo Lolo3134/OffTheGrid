@@ -357,6 +357,7 @@
     background-color: #000000;
     position: relative;
     overflow: hidden;
+    z-index: 1;
     @media screen and (max-width: 767px) {
       position: sticky;
       top: 0px;
@@ -388,6 +389,7 @@
     position: relative;
     overflow: hidden;
     background-color: #000000;
+    z-index: 1;
     @media screen and (max-width: 767px) {
       position: sticky;
       top: 25px;
@@ -419,6 +421,7 @@
     position: relative;
     overflow: hidden;
     background-color: #000000;
+    z-index: 1;
     @media screen and (max-width: 767px) {
       position: sticky;
       top: 50px;
@@ -450,6 +453,7 @@
     position: relative;
     overflow: hidden;
     background-color: #000000;
+    z-index: 1;
     @media screen and (max-width: 767px) {
       position: sticky;
       top: 75px;
@@ -481,6 +485,7 @@
     position: relative;
     overflow: hidden;
     background-color: #000000;
+    z-index: 1;
     @media screen and (max-width: 767px) {
       position: sticky;
       top: 100px;

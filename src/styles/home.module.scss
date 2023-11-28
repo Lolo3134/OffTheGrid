@@ -1559,6 +1559,16 @@
     .projects_card3 {
       margin-top: 254px;
 
+      .projects_card__preview {
+        background: white;
+        width: 266px;
+        height: 202px;
+        border-radius: 20px;
+        object-fit: cover;
+        @media screen and (max-width: 767px) {
+          align-self: center;
+        }
+      }
     }
 
     .projects_card6 {

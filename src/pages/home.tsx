@@ -19,6 +19,7 @@ import team4 from '../assets/image/team4.png';
 import team5 from '../assets/image/team5.png';
 import chargemate from '../assets/image/chargemate.png';
 import page from '../assets/image/page.webp';
+import radiant from '../assets/image/radiant.webp';
 import chefAlex from '../assets/image/chefAlex.png';
 import screens from '../assets/image/screens.webp';
 import website from '../assets/image/website.webp';
@@ -527,16 +528,18 @@ export const Home = () => {
                   </div>
                 </div>
                 <div className={s.projects_cards__wrapper}>
-                  <div className={`${s.projects_card} ${s.projects_card3}`}>
-                    <img alt="website" className={s.projects_card__preview} src={website} />
-                    <div className={s.projects_card__wrapper}>
-                      <h4 className={s.projects_card__title}>Our Projects</h4>
-                      <p className={s.projects_card__description}>
-                        We developed a custom web application for
-                        a healthcare provider, streamlining their appointment booking process...
-                      </p>
+                  <Link target="_blank" to="/radiant">
+                    <div className={`${s.projects_card} ${s.projects_card3}`}>
+                      <img alt="website" className={s.projects_card__preview} src={radiant} />
+                      <div className={s.projects_card__wrapper}>
+                        <h4 className={s.projects_card__title}>Radiant</h4>
+                        <p className={s.projects_card__description}>
+                          We developed a custom web application for
+                          a healthcare provider, streamlining their appointment booking process...
+                        </p>
+                      </div>
                     </div>
-                  </div>
+                  </Link>
                   <div className={`${s.projects_card} ${s.projects_card7}`}>
                     <img alt="sticker" className={s.projects_card__preview} src={sticker} />
                     <div className={s.projects_card__wrapper}>

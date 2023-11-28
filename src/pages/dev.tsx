@@ -13,6 +13,7 @@ import {
 
 import chefAlex from '../assets/image/chefAlex_dev.png';
 import chargemate from '../assets/image/chargemate_dev.png';
+import radiant from '../assets/image/radiant_dev.webp';
 import bright from '../assets/image/bright.png';
 import rad from '../assets/image/random.png';
 
@@ -198,12 +199,12 @@ const Dev = () => {
           </div>
           <div ref={card3} className={`${s.card} ${s.card3}`}>
             <img
-              alt="card preview bright"
+              alt="card preview salon radiant"
               className={s.card_img}
-              src={bright}
+              src={radiant}
             />
             <div className={s.card_description}>
-              <h4 className={s.card_title}>Chef Alex</h4>
+              <h4 className={s.card_title}>Radiant</h4>
               <span className={s.card_date}>2023</span>
             </div>
           </div>
