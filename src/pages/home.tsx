@@ -587,9 +587,9 @@ export const Home = () => {
                   </div>
                 </div>
                 <div className={`${s.projects_card} ${s.projects_card5}`}>
-                  <img alt="page" className={s.projects_card__preview} src={page} />
+                  <img alt="page" className={s.projects_card__preview} src={radiant} />
                   <div className={s.projects_card__wrapper}>
-                    <h4 className={s.projects_card__title}>Our Projects</h4>
+                    <h4 className={s.projects_card__title}>Radiant</h4>
                     <p className={s.projects_card__description}>
                       We developed a custom web application for
                       a healthcare provider, streamlining their appointment booking process...

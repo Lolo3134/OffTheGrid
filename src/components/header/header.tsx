@@ -26,7 +26,7 @@ export const Header = () => {
               <span className={s.portfolio_quantity}>27+</span>
             </Link>
             <div className={s.pages}>
-              <Link to="/about">About us</Link>
+              <Link to="/">About us</Link>
               <Link to="/webDev">Web Developers</Link>
               <div className={s.designed}>
                 <button type="button">Designed</button>
@@ -57,7 +57,7 @@ export const Header = () => {
               && (
                 <div className={`${s.menu} ${isOpen ? s.open : ''} `}>
                   <nav>
-                    <Link to="/about" onClick={() => setIsOpen(false)}>
+                    <Link to="/" onClick={() => setIsOpen(false)}>
                       About us /
                       <span className={s.link_page__orange}>01</span>
                     </Link>

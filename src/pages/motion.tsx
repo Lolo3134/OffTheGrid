@@ -269,10 +269,6 @@ const Motion = () => {
                   />
                 )}
             </div>
-            <div className={s.video_description}>
-              <h4 className={s.video_title}>Charge mate</h4>
-              <p className={`${s.video_date} ${s.green}`}>2023</p>
-            </div>
           </div>
           <div className={s.video}>
             <div className={s.video2__wrapper}>
@@ -299,10 +295,6 @@ const Motion = () => {
                     width="100%"
                   />
                 )}
-            </div>
-            <div className={s.video_description}>
-              <h4 className={s.video_title}>Charge mate</h4>
-              <p className={`${s.video_date} ${s.pink}`}>2023</p>
             </div>
           </div>
         </div>
@@ -333,10 +325,6 @@ const Motion = () => {
                   />
                 )}
             </div>
-            <div className={s.video_description}>
-              <h4 className={s.video_title}>Charge mate</h4>
-              <p className={`${s.video_date} ${s.purple}`}>2023</p>
-            </div>
           </div>
         </div>
         <div className={s.line3}>
@@ -366,10 +354,6 @@ const Motion = () => {
                   />
                 )}
             </div>
-            <div className={s.video_description}>
-              <h4 className={s.video_title}>Charge mate</h4>
-              <p className={`${s.video_date} ${s.green}`}>2023</p>
-            </div>
           </div>
           <div className={s.video}>
             <div className={s.video5__wrapper}>
@@ -396,10 +380,6 @@ const Motion = () => {
                     width="100%"
                   />
                 )}
-            </div>
-            <div className={s.video_description}>
-              <h4 className={s.video_title}>Charge mate</h4>
-              <p className={`${s.video_date} ${s.orange}`}>2023</p>
             </div>
           </div>
         </div>

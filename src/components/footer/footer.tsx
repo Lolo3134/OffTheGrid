@@ -88,9 +88,9 @@ export const Footer = () => {
         <div className={s.left}>
           <img alt="logo" src={Logo} />
           <nav className={s.nav}>
-            <Link to="/about">About us</Link>
+            <Link to="/">About us</Link>
             <Link to="/dev">Web Developers</Link>
-            <Link to="/designed">Designed</Link>
+            <Link to="/design">Designed</Link>
             <Link to="/contacts">Contacts</Link>
           </nav>
         </div>
