@@ -101,7 +101,11 @@ export const Header = () => {
                         <Link target="_blank" to="/dfd" onClick={() => setIsOpen(false)}>
                           <img alt="go to X" className={s.link} src={X} />
                         </Link>
-                        <Link target="_blank" to="/dfd" onClick={() => setIsOpen(false)}>
+                        <Link
+                          target="_blank"
+                          to="https://www.instagram.com/offthegrid_lab"
+                          onClick={() => setIsOpen(false)}
+                        >
                           <img alt="go to instagram" className={s.link} src={inst} />
                         </Link>
                         <Link target="_blank" to="/dfd" onClick={() => setIsOpen(false)}>

@@ -1476,6 +1476,10 @@
     display: flex;
     gap: 10px;
 
+    a {
+      text-decoration: none;
+    }
+
     @media screen and (max-width: 767px) {
       flex-direction: column;
       gap: 0;

@@ -89,7 +89,7 @@ export const Footer = () => {
           <img alt="logo" src={Logo} />
           <nav className={s.nav}>
             <Link to="/">About us</Link>
-            <Link to="/dev">Web Developers</Link>
+            <Link to="/webDev">Web Developers</Link>
             <Link to="/design">Designed</Link>
             <Link to="/contacts">Contacts</Link>
           </nav>
