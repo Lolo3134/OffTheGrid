@@ -1,4 +1,4 @@
-import React, { lazy, Suspense, useContext } from 'react';
+import React, { lazy, Suspense } from 'react';
 
 import { Route, Routes, useLocation } from 'react-router-dom';
 

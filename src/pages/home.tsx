@@ -22,7 +22,6 @@ import page from '../assets/image/page.webp';
 import radiant from '../assets/image/radiant.webp';
 import chefAlex from '../assets/image/chefAlex.png';
 import screens from '../assets/image/screens.webp';
-import website from '../assets/image/website.webp';
 import sticker from '../assets/image/sticker.webp';
 import bag from '../assets/image/bag.webp';
 import modernn from '../assets/image/modernn.webp';
@@ -528,16 +527,18 @@ export const Home = () => {
                   </div>
                 </div>
                 <div className={s.projects_cards__wrapper}>
-                  <Link target="_blank" to="/radiant">
-                    <div className={`${s.projects_card} ${s.projects_card3}`}>
-                      <img alt="website" className={s.projects_card__preview} src={radiant} />
-                      <div className={s.projects_card__wrapper}>
-                        <h4 className={s.projects_card__title}>Radiant</h4>
-                        <p className={s.projects_card__description}>
-                          We developed a custom web application for
-                          a healthcare provider, streamlining their appointment booking process...
-                        </p>
-                      </div>
+                  <Link
+                    className={`${s.projects_card} ${s.projects_card3}`}
+                    target="_blank"
+                    to="https://hairlashsalon.com/"
+                  >
+                    <img alt="website" className={s.projects_card__preview} src={radiant} />
+                    <div className={s.projects_card__wrapper}>
+                      <h4 className={s.projects_card__title}>Radiant</h4>
+                      <p className={s.projects_card__description}>
+                        We developed a custom web application for
+                        a healthcare provider, streamlining their appointment booking process...
+                      </p>
                     </div>
                   </Link>
                   <div className={`${s.projects_card} ${s.projects_card7}`}>
@@ -576,7 +577,11 @@ export const Home = () => {
               </>
             ) : (
               <>
-                <div className={`${s.projects_card} ${s.projects_card1}`}>
+                <Link
+                  className={`${s.projects_card} ${s.projects_card1}`}
+                  target="_blank"
+                  to="https://chargemate.me/"
+                >
                   <img alt="website chargemate" className={s.projects_card__preview} src={chargemate} />
                   <div className={s.projects_card__wrapper}>
                     <h4 className={s.projects_card__title}>Сharge mate</h4>
@@ -585,8 +590,12 @@ export const Home = () => {
                       a healthcare provider, streamlining their appointment booking process...
                     </p>
                   </div>
-                </div>
-                <div className={`${s.projects_card} ${s.projects_card5}`}>
+                </Link>
+                <Link
+                  className={`${s.projects_card} ${s.projects_card5}`}
+                  target="_blank"
+                  to="https://hairlashsalon.com/"
+                >
                   <img alt="page" className={s.projects_card__preview} src={radiant} />
                   <div className={s.projects_card__wrapper}>
                     <h4 className={s.projects_card__title}>Radiant</h4>
@@ -595,8 +604,12 @@ export const Home = () => {
                       a healthcare provider, streamlining their appointment booking process...
                     </p>
                   </div>
-                </div>
-                <div className={`${s.projects_card} ${s.projects_card2}`}>
+                </Link>
+                <Link
+                  className={`${s.projects_card} ${s.projects_card2}`}
+                  target="_blank"
+                  to="https://chefalex.co/"
+                >
                   <img alt="website chefAlex" className={s.projects_card__preview} src={chefAlex} />
                   <div className={s.projects_card__wrapper}>
                     <h4 className={s.projects_card__title}>Chef Alex</h4>
@@ -605,7 +618,7 @@ export const Home = () => {
                       a healthcare provider, streamlining their appointment booking process...
                     </p>
                   </div>
-                </div>
+                </Link>
                 <div className={`${s.projects_card} ${s.projects_card6}`}>
                   <img alt="screens" className={s.projects_card__preview} src={screens} />
                   <div className={s.projects_card__wrapper}>
