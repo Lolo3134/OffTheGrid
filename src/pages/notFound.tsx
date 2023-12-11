@@ -36,7 +36,7 @@ const NotFound = () => (
           <HeartIcon fill="#FF6DB2" />
           <FireIcon fill="#FF6DB2" />
           <BookmarkIcon />
-          <ClickIcon />
+          <ClickIcon fill="#703FFF" />
         </div>
       </div>
     </div>

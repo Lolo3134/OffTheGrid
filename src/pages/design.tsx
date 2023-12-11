@@ -70,7 +70,7 @@ const Design = () => {
             )
         }
         <div className={s.about_blocks}>
-          <ClickIcon />
+          <ClickIcon fill="#703FFF" />
           <span>Digital design</span>
           <HeartIcon fill="#FF6DB2" />
           <span>Brand design</span>

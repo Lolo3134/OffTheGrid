@@ -27,6 +27,7 @@
     "sass-loader": "^13.3.2",
     "scrollmagic": "^2.0.8",
     "slick-carousel": "^1.8.1",
+    "swiper": "^11.0.5",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },

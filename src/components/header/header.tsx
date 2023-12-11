@@ -33,7 +33,7 @@ export const Header = () => {
                 <div className={s.designed__wrapper}>
                   <div className={s.designed_block}>
                     <Link to="/design">UX/UI design</Link>
-                    <Link to="/2d_3d">2D</Link>
+                    <Link to="/pixelart">2D</Link>
                     <Link to="/motion">Motion design</Link>
                     <Link to="/graphic">Graphic design</Link>
                   </div>
@@ -81,7 +81,7 @@ export const Header = () => {
                       Video,foto /
                       <span className={s.link_page__green}>06</span>
                     </Link>
-                    <Link to="/pixelArt" onClick={() => setIsOpen(false)}>
+                    <Link to="/pixelart" onClick={() => setIsOpen(false)}>
                       2D Pixel Art /
                       <span className={s.link_page__pink}>07</span>
                     </Link>

@@ -14,6 +14,7 @@ const Motion = lazy(() => import(/* webpackChunkName: "Motion" */ './pages/motio
 const Contacts = lazy(() => import(/* webpackChunkName: "Contacts" */ './pages/contacts'));
 const NotFound = lazy(() => import(/* webpackChunkName: "NotFound" */ './pages/notFound'));
 const Design = lazy(() => import(/* webpackChunkName: "Design" */ './pages/design'));
+const PixelArt = lazy(() => import(/* webpackChunkName: "PixelArt" */ './pages/pixelArt'));
 
 function App() {
   const { pathname } = useLocation();
@@ -45,6 +46,7 @@ function App() {
             <Route element={<Design />} path="/design" />
             <Route element={<Motion />} path="/motion" />
             <Route element={<Contacts />} path="/contacts" />
+            <Route element={<PixelArt />} path="/pixelart" />
             <Route element={<NotFound />} path="/*" />
           </Routes>
         </Suspense>
